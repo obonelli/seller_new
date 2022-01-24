@@ -29,3 +29,8 @@
 .CentrarLogo {
     margin-left: 13%
 }
+
+svg.Logos-menu {
+    height: 30px;
+    width: 250px;
+}

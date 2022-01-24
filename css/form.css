@@ -12,16 +12,19 @@ body {
 }
 
 #regForm {
-    background-color: #ffffff;
     margin-top: 0px;
     margin-right: auto;
     margin-bottom: 100px;
     margin-left: auto;
-    padding: 40px;
     width: 70%;
     min-width: 300px;
-    margin-bottom: 15%;
+  }
+
+  .regForm_container {
+    background-color: #ffffff;
+    margin-bottom: 0%;
     border-radius: 0.5rem;
+    padding: 40px;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
   
@@ -106,6 +109,7 @@ body {
 }
 
 .custom_avance {
+  margin-top: 2%;
   width: 73%;
 }
 

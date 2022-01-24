@@ -16,3 +16,7 @@
     outline: none;
     margin-left: 2%;
 }
+
+.custom-blue-buttonperfil:hover {
+    cursor:pointer;
+}
