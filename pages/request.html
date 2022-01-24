@@ -4,10 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>Solicitud</title>
-    <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="../css/request.css" rel="stylesheet">
+    <link href="../css/components/blue_button.css" rel="stylesheet">
 </head>
 
 <body>
@@ -42,9 +41,9 @@
                 <li>Régimen fiscal, domicilio de la empresa, datos bancarios, dirección de las operaciones físicas</li>
             </ul>
         </div>
-        <div>
+        <div class="sub_container_2">
             <p class="sub_titulo">
-                Toma en cuenta estos consejos útiles antes de comenzar la solicitud
+                Consejos útiles antes de comenzar
             </p>
             <ul>
                 <li>La información capturada no se guarda si cierras esta pestaña del navegador</li>
@@ -70,7 +69,11 @@
                     robot.</label>
             </div>
         </div>
-        <button id="iniciar" disabled="true" onclick="inicioForm()">Iniciar solicitud</button>
+        <div style="width: 100%; text-align: right;margin-bottom: 1.5rem;">
+            <button id="iniciar" class="custom-blue-buttonperfil c-width" disabled="true" onclick="inicioForm()">Iniciar
+                solicitud</button>
+        </div>
+
     </div>
     <div id="footer"></div>
     <!-- SCRIPTS -->
