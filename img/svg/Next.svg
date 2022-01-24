@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31.49px" height="22.142px" viewBox="0 0 31.49 22.142" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Sprite/icon/Next</title>
+    <g id="Sprite/icon/Next" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M21.205,0.333 C20.776,-0.111 20.062,-0.111 19.618,0.333 C19.189,0.762 19.189,1.476 19.618,1.904 L27.665,9.951 L1.111,9.951 C0.492,9.952 -1.04805054e-13,10.444 -1.04805054e-13,11.063 C-1.04805054e-13,11.682 0.492,12.19 1.111,12.19 L27.665,12.19 L19.618,20.222 C19.189,20.666 19.189,21.381 19.618,21.809 C20.062,22.253 20.777,22.253 21.205,21.809 L31.157,11.857 C31.601,11.428 31.601,10.714 31.157,10.286 L21.205,0.333 Z" id="Shape" fill="#C4CDD5" fill-rule="nonzero"></path>
+    </g>
+</svg>

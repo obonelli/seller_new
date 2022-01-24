@@ -1,0 +1,74 @@
+/* Style the request */
+
+body {
+    background-color: #e5e7eb;
+}
+.container_request {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 0px 24px;
+    position: static;
+    width: 937px;
+    height: 860px;
+    left: 0px;
+    top: 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 100px 0px 0px 120px;
+}
+.titulo_principal {
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+    color: #111111;
+}
+
+.titulo_info {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #111111;
+}
+
+.sub_titulo {
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+    color: #111111;
+}
+
+.sub_container {
+    background-color: white;
+}
+
+.custom_checkbox {
+    position: absolute;
+    pointer-events: none;
+    opacity: 1 !important;
+}
+
+.documentos_container {
+    width: 100%;
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.doc_subcontainer {
+    width: 40%;
+}
+
+.doc_subcontainer_izquierdo {
+    width: 40%;
+    margin-right: 10%;
+}

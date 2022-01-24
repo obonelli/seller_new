@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="290" viewBox="0 0 375 290">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="72" y="104" width="375" height="290" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_de_desplazamiento_1" data-name="Grupo de desplazamiento 1" transform="translate(-72 -104)" clip-path="url(#clip-path)" style="isolation: isolate">
+    <g id="Elipse_1" data-name="Elipse 1" fill="#fff" stroke="#fff" stroke-width="1">
+      <ellipse cx="254.5" cy="197" rx="254.5" ry="197" stroke="none"/>
+      <ellipse cx="254.5" cy="197" rx="254" ry="196.5" fill="none"/>
+    </g>
+  </g>
+</svg>

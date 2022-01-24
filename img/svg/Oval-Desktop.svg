@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="923px" height="1163px" viewBox="0 0 923 1163" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Oval</title>
+    <defs>
+        <linearGradient x1="13.8513951%" y1="37.556402%" x2="79.2285764%" y2="60.4490459%" id="linearGradient-1">
+            <stop stop-color="#FCEB6F" offset="0%"></stop>
+            <stop stop-color="#FEDE60" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bg-hero/bg-hero-desktop" transform="translate(-2059.000000, 261.000000)" fill="url(#linearGradient-1)">
+            <g id="Hero/Desktop" transform="translate(0.000000, -347.000000)">
+                <g id="Bitmap" transform="translate(0.000000, -0.000000)">
+                    <path d="M2535,1125 C2759.5,1159 3102,903.751995 3102,655.5 C3102,407.248005 2839.86272,206 2516.5,206 C2193.13728,206 1762.25371,556 2016.87686,780 C2271.5,1004 2310.5,1091 2535,1125 Z" id="Oval" transform="translate(2520.904245, 667.030231) rotate(90.000000) translate(-2520.904245, -667.030231) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

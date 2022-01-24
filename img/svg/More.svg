@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Sprite/Icon/System/Navigation/Expand/More</title>
+    <g id="Sprite/Icon/System/Navigation/Expand/More" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" fill-rule="nonzero">
+            <g id="Icon/System/Navigation/Expand/More">
+                <rect id="Path" x="0" y="0" width="24" height="24"></rect>
+                <path d="M14.2928932,4.33473511 C14.6834175,3.88842163 15.3165825,3.88842163 15.7071068,4.33473511 C16.0675907,4.74671678 16.0953203,5.39498084 15.7902954,5.84331365 L15.7071068,5.95097918 L10.415,12 L15.7071068,18.0490208 C16.0675907,18.4610025 16.0953203,19.1092666 15.7902954,19.5575994 L15.7071068,19.6652649 C15.3466228,20.0772466 14.7793918,20.1089375 14.3871006,19.7603376 L14.2928932,19.6652649 L8.29289322,12.808122 C7.93240926,12.3961404 7.90467972,11.7478763 8.20970461,11.2995435 L8.29289322,11.191878 L14.2928932,4.33473511 Z" id="Expand-More" fill="#212121" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

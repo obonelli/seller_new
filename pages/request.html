@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Solicitud</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/request.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="container_request">
+        <p class="titulo_principal">
+            Comienza a vender en Coppel Marketplace
+        </p>
+        <div class="sub_container">
+            <p class="sub_titulo">
+                Requisitos para iniciar la solicitud
+            </p>
+            <span>Documentacion en formato PDF o imagen:</span>
+            <div class="documentos_container">
+                <div class="doc_subcontainer_izquierdo">
+                    <p>RFC</p>
+                    <span>Estado de cuenta bancario (no mayor a 3 meses)</span>
+                </div>
+                <div class="doc_subcontainer">
+                    <p>Identificación oficial del contribuyente o representante legal <span>(IFE/INE o
+                            pasaporte
+                            vigente)</span></p>
+
+                    <p>Acta Constitutiva (solo para personas morales)</p>
+                </div>
+            </div>
+            <span>Información acerca de:</span>
+            <ul>
+                <li>Categoría principal de tus productos</li>
+                <li>Datos del presentante legal (Nombre, CURP, fecha de nacimiento, teléfono, correo)</li>
+                <li>Estado de cuenta bancario (no mayor a 3 meses)</li>
+                <li>Régimen fiscal, domicilio de la empresa, datos bancarios, dirección de las operaciones físicas</li>
+            </ul>
+        </div>
+        <div>
+            <p class="sub_titulo">
+                Toma en cuenta estos consejos útiles antes de comenzar la solicitud
+            </p>
+            <ul>
+                <li>La información capturada no se guarda si cierras esta pestaña del navegador</li>
+                <li>Tus datos personales y legales serán protegidos en todo momento</li>
+                <li>El proceso de solicitud tarda entre 10-15 minutos si tienes toda la información a la mano </li>
+            </ul>
+            <p class="sub_titulo">
+                Términos y condiciones
+            </p>
+            <label><input type="checkbox" class="custom_checkbox" id="cbox1" value="first_checkbox"
+                    onclick="comprobarTerminos()">Todos los
+                documentos e información que
+                guardé en el registro, cumplen con
+                los requisitos legales aplicables
+                y dejo fuera a Coppel de cualquier responsabilidad.</label>
+            <label><input type="checkbox" class="custom_checkbox" id="cbox2" value="first_second"
+                    onclick="comprobarTerminos()">He leído y
+                acepto los Términos y
+                condiciones.</label>
+            <div>
+                <label><input type="checkbox" class="custom_checkbox" id="cbox3" value="second_third"
+                        onclick="comprobarTerminos()">I'm not a
+                    robot.</label>
+            </div>
+        </div>
+        <button id="iniciar" disabled="true" onclick="inicioForm()">Iniciar solicitud</button>
+    </div>
+    <div id="footer"></div>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+<script>
+    $(document).ready(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+    });
+
+    function comprobarTerminos() {
+        const cb1 = document.querySelector('#cbox1');
+        const cb2 = document.querySelector('#cbox2');
+        const cb3 = document.querySelector('#cbox3');
+        var btn = document.getElementById("iniciar");
+        if (cb1.checked == true && cb2.checked == true && cb3.checked == true) {
+            btn.disabled = false;
+        } else {
+            btn.disabled = true;
+        }
+    }
+
+    function inicioForm(e) {
+        window.location = "form.html";
+    }
+
+</script>
+
+</html>

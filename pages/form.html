@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Alta Seller</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Circular -->
+    <!-- Your custom styles (optional) -->
+    <link href="../css/form.css" rel="stylesheet">
+    <link href="../css/components/input.css" rel="stylesheet">
+    <link href="../css/components/blue_button.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <!-- Circles which indicates the steps of the form: -->
+    <div class="pasos_superior">
+        <label><span class="step">1</span>Contacto<svg class='linea'></svg></label>
+        <label><span class="step">2</span>Experiencia de venta<svg class='linea'></svg></label>
+        <label><span class="step">3</span>Datos oficiales<svg class='linea'></svg></label>
+        <label><span class="step">4</span>Logistica<svg class='linea'></svg></label>
+        <label><span class="step">5</span>Documentos</label>
+    </div>
+
+    <form id="regForm" action="">
+
+        <p class="titulo_principal">
+            Contacto
+        </p>
+        <p class="titulo_info">
+            Información de quién administrará la cuenta de Coppel Marketplace
+        </p>
+        <span>* Estos datos son obligatorios para continuar con el proceso.</span>
+
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab" id="custom_tab">
+            <div class="contenedor_inputs">
+                <div id="HeaderNombreComercial" class="middle_with input-group" name="Bandera[]"
+                    style="padding-right: 4%;">
+                    <label for='nom_usuario' id="LabelNombreComercial">
+                        Nombre*
+                    </label>
+                    <input id="nom_usuario" type="text" name="nom_usuario" maxlength="99"
+                        onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"
+                        class="form-control" tabindex="1" value="" placeholder="" tabindex="0"
+                        onfocus="ActivaEscritura('HeaderNombreComercial');">
+                    <span id="info_name" class="error_disabled">
+                        Persona que será encargada de la cuenta en Coopel
+                    </span>
+                </div>
+                <div id="HeaderApellidoComercial" class="middle_with input-group" name="Bandera[]"
+                    style="padding-right: 0%;">
+                    <label for='nom_apellido' id="LabelApellidoComercial">
+                        Apellidos*
+                    </label>
+                    <input id="nom_apellido" type="text" name="nom_apellido" maxlength="99"
+                        onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"
+                        class="form-control" tabindex="1" value="" placeholder="" tabindex="0"
+                        onfocus="ActivaEscritura('HeaderApellidoComercial');">
+                    <span id="info_apellidos" class="error_disabled">
+                        Completa el campo
+                    </span>
+                </div>
+            </div>
+            <div class="contenedor_inputs">
+                <div id="HeaderTelefonoCelular" class="middle_with input-group" name="Bandera[]"
+                    style="padding-right: 4%;">
+                    <label for='num_celular' id="LabelTelefonoCelular">
+                        Telefono celular*
+                    </label>
+                    <input id="num_celular" type="text" name="num_celular" maxlength="99"
+                        onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"
+                        class="form-control" tabindex="1" value="" placeholder="" tabindex="0"
+                        onfocus="ActivaEscritura('HeaderTelefonoCelular');">
+                </div>
+                <div id="HeaderCorreoElectronico" class="middle_with input-group" name="Bandera[]"
+                    style="padding-right: 0%;">
+                    <label for='correo_electronico' id="LabelCorreoElectronico">
+                        Correo electrónico*
+                    </label>
+                    <input id="correo_electronico" type="text" name="correo_electronico" maxlength="99"
+                        onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"
+                        class="form-control" tabindex="1" value="" placeholder="" tabindex="0"
+                        onfocus="ActivaEscritura('HeaderCorreoElectronico');">
+                </div>
+            </div>
+            <div class="contenedor_inputs">
+                <div id="HeaderNombreEnCoppel" class="middle_with input-group" name="Bandera[]"
+                    style="padding-right: 4%;">
+                    <label for='nom_coppel' id="LabelNombreEnCoppel">
+                        Nombre comercial en Coppel*
+                    </label>
+                    <input id="nom_coppel" type="text" name="nom_coppel" maxlength="99"
+                        onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"
+                        class="form-control" tabindex="1" value="" placeholder="" tabindex="0"
+                        onfocus="ActivaEscritura('HeaderNombreEnCoppel');">
+                </div>
+            </div>
+        </div>
+
+        <div class="tab">Contact Info:
+            <p><input placeholder="E-mail..." oninput="this.className = ''"></p>
+            <p><input placeholder="Phone..." oninput="this.className = ''"></p>
+        </div>
+
+        <div class="tab">Birthday:
+            <p><input placeholder="dd" oninput="this.className = ''"></p>
+            <p><input placeholder="mm" oninput="this.className = ''"></p>
+            <p><input placeholder="yyyy" oninput="this.className = ''"></p>
+        </div>
+
+        <div class="tab">Login Info:
+            <p><input placeholder="Username..." oninput="this.className = ''"></p>
+            <p><input placeholder="Password..." oninput="this.className = ''"></p>
+        </div>
+
+        <div class="tab">Documentos:
+            <p><input placeholder="Username..." oninput="this.className = ''"></p>
+            <p><input placeholder="Password..." oninput="this.className = ''"></p>
+        </div>
+
+        <div class="custom_avance">
+            <div style="float:left;">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            </div>
+            <div style="float:right;">
+                <button type="button" class="custom-blue-buttonperfil" id="nextBtn"
+                    onclick="nextPrev(1)">Continuar</button>
+            </div>
+        </div>
+
+    </form>
+    <!-- Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+    <script type="text/javascript" src="../js/analytics.js"></script>
+    <!-- Form Js -->
+    <script type="text/javascript" src="../js/form.js"></script>
+    <div id="footer"></div>
+</body>
+<script>
+    $(document).ready(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+    });
+    function ActivaEscritura(Parent) {
+
+        var els = document.getElementsByName("Bandera[]");
+
+        if (document.getElementById("extra_search")) {
+            if (document.getElementById("extra_search").disabled == true) {
+                console.log('elemento bloqueado');
+                let timerInterval
+                window.swal.fire({
+                    icon: 'error',
+                    title: 'Favor de elegir una categoria!',
+                    html: 'Se cerrera en <b></b> milliseconds.',
+                    timer: 1600,
+                    timerProgressBar: true,
+                    didOpen: () => {
+                        window.swal.showLoading()
+                        timerInterval = setInterval(() => {
+                            const content = window.swal.getContent()
+                            if (content) {
+                                const b = content.querySelector('b')
+                                if (b) {
+                                    b.textContent = window.swal.getTimerLeft()
+                                }
+                            }
+                        }, 100)
+                    },
+                    willClose: () => {
+                        clearInterval(timerInterval)
+                    }
+                }).then((result) => {
+                    /* Read more about handling dismissals below */
+                    if (result.dismiss === window.swal.DismissReason.timer) {
+                        console.log('Favor de elegir una categoria')
+                    }
+                })
+            } else {
+
+                console.log('elemento desbloqueado');
+
+                for (var i = 0; i < els.length; i++) {
+                    var IdActual = els[i].id;
+                    if (IdActual != Parent) {
+                        var InputActual = document.getElementById(IdActual).children[1].value;
+
+
+                        if (InputActual) {
+
+                            document.getElementById(IdActual).children[0].setAttribute('style', 'top:6px; font-size:12px; color:#0070BF;position:absolute;');
+                            document.getElementById(IdActual).children[1].setAttribute('style', 'border-color: #0070BF;');
+                        } else {
+                            document.getElementById(IdActual).children[0].setAttribute('style', 'top:16px; font-size:16px; color:#636363;position:absolute;');
+                            document.getElementById(IdActual).children[1].setAttribute('style', 'border-color: #D8D8D8;');
+                        }
+
+                    } else {
+                        document.getElementById(Parent).children[0].setAttribute('style', 'top:6px; font-size:12px; color:#0070BF;position:absolute;');
+                        document.getElementById(Parent).children[1].setAttribute('style', 'border-color: #0070BF;');
+
+                    }
+
+                }
+            }
+        } else {
+
+            for (var i = 0; i < els.length; i++) {
+                var IdActual = els[i].id;
+                if (IdActual != Parent) {
+                    var InputActual = document.getElementById(IdActual).children[1].value;
+
+
+                    if (InputActual) {
+
+                        document.getElementById(IdActual).children[0].setAttribute('style', 'top:6px; font-size:12px; color:#0070BF;position:absolute;');
+                        document.getElementById(IdActual).children[1].setAttribute('style', 'border-color: #0070BF;');
+                    } else {
+                        document.getElementById(IdActual).children[0].setAttribute('style', 'top:16px; font-size:16px; color:#636363;position:absolute;');
+                        document.getElementById(IdActual).children[1].setAttribute('style', 'border-color: #D8D8D8;');
+                    }
+
+                } else {
+                    document.getElementById(Parent).children[0].setAttribute('style', 'top:6px; font-size:12px; color:#0070BF;position:absolute;');
+                    document.getElementById(Parent).children[1].setAttribute('style', 'border-color: #0070BF;');
+
+                }
+
+            }
+
+        }
+    }
+</script>
+
+</html>

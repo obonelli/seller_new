@@ -1,0 +1,974 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif !important;
+}
+
+.footer {
+    position: absolute !important;
+    bottom: 0 !important;
+    background-color: #00253d !important;
+    color: white !important;
+    width: 100%;
+    margin-top: 5rem;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* .nav_form {
+    font-weight: 300;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    height: 65px;
+    background-color: #FFDD30 !important;
+    padding: 0 !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+} */
+
+.Multiplica-tus-venta {
+    font-weight: bold;
+    margin: 18px 7.5rem 1rem 0.188rem;
+    font-stretch: normal;
+    font-size: 25px !important;
+    font-style: normal;
+    line-height: 1.25;
+    color: #f5f5f5;
+    text-align: left !important;
+}
+
+.Ms65 {
+    margin: 1rem 0 0;
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #f5f5f5;
+}
+
+.OpcionesMenu {
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 1rem;
+}
+
+.MVentasHeader {
+    font-family: 'CircularStd', sans-serif !important;
+}
+
+
+/*.margin-button-cuenta {
+  /* margin-right: 4.3rem;
+}*/
+
+.RecursosSeller {
+    width: 21rem;
+    height: 1.875rem;
+    margin: 0 14.75rem 1.063rem 0.563rem;
+    font-family: 'CircularStd', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #212121;
+}
+
+.AccedeCursos {
+    /*width: 35.75rem;*/
+    /*height: 4.5rem;*/
+    margin: 1.063rem 0 0.563rem 0.563rem;
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    /*letter-spacing: 0.5px;*/
+    color: #212121;
+}
+
+.Seminarios-web {
+    width: 7.625rem;
+    height: 1.5rem;
+    margin: 0 0 0.125rem;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #006fb9;
+}
+
+.EstileBold {
+    font-family: 'CircularStd', sans-serif;
+    font-weight: bold;
+    height: 5rem;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    color: #f5f5f5;
+}
+
+.EstileBold1 {
+    font-family: 'CircularStd', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.HeaderAyudar {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #212121;
+}
+
+.Conoce {
+    height: 1.5rem;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 1rem 42.594rem 1.5rem 0.344rem;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #212121;
+}
+
+.close {
+    opacity: 1;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 0.875rem !important;
+}
+
+element.style {
+    font-size: 0.875rem;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #0056b3;
+}
+
+.modal-body {
+    height: 582px;
+}
+
+.LetraHeader {
+    font-family: Helvetica, Arial, sans-serif !important;
+    color: #f5f5f5;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.FamilyCircular {
+    font-family: "CircularStd-Bold";
+    font-size: 32px;
+    color: #f5f5f5;
+    letter-spacing: 0.40px;
+}
+
+.headerCol {
+    color: #006fb9;
+}
+
+.Recursos {
+    width: 21rem;
+    height: 1.875rem;
+    margin: 0 14.75rem 1.063rem 0.563rem;
+    font-family: 'CircularStd', sans-serif;
+    font-weight: bold !important;
+    font-size: 1.5rem;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #212121;
+}
+
+.fa-angle-down:before {
+    content: "\f107";
+}
+
+.anotherC {
+    font-weight: bold;
+}
+
+.EspacioBanner {
+    margin-top: 75px;
+}
+
+.bg-blue {
+    background-image: linear-gradient(90deg, #153F7E 0%, #1B4F9A 50%);
+    height: 356px;
+    position: relative;
+}
+
+.cardt {
+    font-size: .9rem;
+    color: #212121;
+    margin: 0.5rem 0.563rem 0 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.card-title {
+    font-family: 'CircularStd', sans-serif;
+    font-weight: bold !important;
+}
+
+.hijo-multiplicaventas {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -moz-transfrom: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    vertical-align: middle;
+    margin-left: 200px;
+}
+
+.bg-svg {
+    background-image: url(../img/svg/Oval-Desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 113px 37%;
+}
+
+.ImagenComputadora {
+    width: 417px;
+    height: auto;
+    margin-left: 6.1%;
+    margin-top: 36px;
+}
+
+.bg-purple {
+    background-color: white;
+}
+
+.--key {
+    margin: 10px 5px 2px 16px;
+}
+
+.card {
+    margin: 10px 5px 2px 16px;
+    transition: 0.4s;
+    box-shadow: 0px 8px 20px rgba(224, 224, 224, 0.5)
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(224, 224, 224, 1);
+}
+
+.nav-coopel {
+    /* padding: 18px 32px !important; */
+    height: 65px;
+    background-color: white;
+}
+
+.TamañoNav {
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.25px;
+    color: #212121;
+}
+
+.btn-vaner-coopel {
+    background-color: white !important;
+    color: #006fb9 !important;
+    border-color: #006fb9 !important;
+    width: 230px;
+    text-transform: initial;
+    padding-top: .5rem !important;
+}
+
+.btn-crearcuenta {
+    opacity: rgba(0, 0, 0, 5.28) !important;
+    width: 8rem;
+    height: 2.2rem;
+    padding: 0 1.063rem 0 1.125rem;
+    border-radius: 20px;
+    text-transform: initial;
+    background-color: #006fb9 !important;
+}
+
+.btn-crearcuenta:hover {
+    opacity: rgba(0, 0, 0, 3.69) !important;
+}
+
+button.btn.btn-crearcuenta.btn-primary:hover {
+    background-color: #006fb9 !important;
+}
+
+button.btn.btn-vaner-coopel:hover {
+    background-color: #d0ecff!important;
+}
+
+
+/*****Estas son las clases que agregé *****/
+
+button.btn.btn-vaner-coopel:hover {
+    background-color: #d0ecff!important;
+}
+
+.card-footer {
+    transition: none;
+    box-shadow: none;
+}
+
+.card-footer:hover {
+    transition: none;
+    transform: none;
+    box-shadow: none;
+}
+
+
+/*.CentrarLogo{
+margin-left:110px;
+
+}*/
+
+.derechos-rr {
+    float: center !important;
+    text-align: center !important;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.25px;
+}
+
+.ColorBtn-Cuent {
+    Color: #006fb9 !important;
+    border-color: #006fb9 !important;
+}
+
+.CentrarLG {
+    margin-top: -10px;
+    width: 11.438rem;
+    height: 1.999rem;
+    margin: -5px 2.5rem 0 0
+}
+
+.card-f-1 {
+    background-image: linear-gradient(90deg, #143D79 0%, #174C97 100%);
+    border-radius: 10px;
+    color: white;
+    height: 230px;
+}
+
+.card-f-2 {
+    background-color: #00253d;
+    color: white;
+}
+
+.links-footer {
+    text-decoration: revert;
+}
+
+i.fas.fa-times {
+    color: #006fb9;
+}
+
+
+/********************************
+*********************************Estas son las clases del btn.***************************************************************
+*********************************/
+
+.menu {
+    transition: 0.4s ease-out;
+}
+
+.modal-header {
+    box-shadow: 0 2px 3px 0 rgb(0 0 0 / 24%);
+}
+
+.tarjetas {
+    background-color: white;
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    height: 120px;
+    width: 120px;
+    border-radius: 8px;
+    padding: 20px 2px;
+    margin: 10px 0;
+    border: solid 1px rgba(112, 112, 112, 0.15);
+    box-shadow: 0px 8px 20px rgba(224, 224, 224, 0.5);
+    transition: 0.4s;
+}
+
+.tarjetas1 {
+    width: 20.5rem;
+    height: 4.5rem;
+    margin: 0 0 0.5rem;
+    padding: 1.375rem 11.125rem 1.5rem 1.375rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+    box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+}
+
+.Regstrate {
+    font-size: 1rem !important;
+    font-weight: normal;
+    font-stretch: normal;
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #212121;
+}
+
+.Espacio {
+    max-width: 18.666667%
+}
+
+.next-- {
+    padding: 46px 0px;
+}
+
+.tarjetitas-nex {
+    padding: 3rem 1rem;
+}
+
+i.fas.fa-long-arrow-alt-down.down-f {
+    color: #707070;
+}
+
+.vender-- {
+    background-image: url(../img/svg/Oval\ \(2\).svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 30px;
+}
+
+
+/********************************
+*********************************Terminan las clases del btn.***************************************************************
+*********************************
+/**********/
+
+.dropdown .--abajo {
+    display: inline-block;
+    transition: all 0.25s cubic-bezier(0.57, 0, 0.67, 0.96);
+    transition-delay: 0 !important;
+}
+
+.dropdown .--abajo {
+    display: inline-block;
+    transform: rotate(0deg);
+}
+
+.nav-item.dropdown.show .--abajo {
+    transform: rotate(180deg);
+}
+
+.rowwerd .--abajo {
+    transform: rotate(180deg);
+}
+
+.flecha--2 .--abajo {
+    display: inline-block;
+    transition: all 0.25s cubic-bezier(0.57, 0, 0.67, 0.96);
+    transition-delay: 0 !important;
+    display: inline-block;
+    transform: rotate(0deg);
+}
+
+.panel-default.flecha--2.onclick .--abajo {
+    transform: rotate(180deg);
+}
+
+.dark-blue-text .menu-2 {
+    display: block;
+    transition: 3s ease-out;
+}
+
+
+/*.dark-blue-text .tachesito{
+  display:none;
+  transition: 3s ease-out;
+}
+.change .dark-blue-text .tachesito{
+  display:block;
+
+  
+
+
+.change .dark-blue-text .menu-2{
+  display:none;
+}}*/
+
+.ff-btn {
+    padding: 30px;
+}
+
+.img-amarillo {
+    background-image: url(../img/svg/elipse\ 2.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.chica-movil-lap {
+    width: 300px;
+    height: 260px;
+    margin-left: 120px;
+    margin-top: -30px;
+}
+
+svg.Logos-menu {
+    height: 30px;
+    width: 250px;
+}
+
+.card-three {
+    width: 330px;
+    ;
+    height: 203px;
+}
+
+.con-fl-card {
+    padding: 10px 15px;
+}
+
+.dropdown-flechita::after {
+    display: none;
+}
+
+.bg-ba-- {
+    background: linear-gradient(90deg, #F0F9FF 0%, #FBFCF9 100%);
+}
+
+.img--chik {
+    width: 51.25rem;
+    height: 28.813rem;
+    border-radius: 8px;
+    box-shadow: 0px 8px 20px rgba(224, 224, 224, 0.5);
+    margin: 1rem;
+}
+
+.a--btn-chica {
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*box-shadow: 0px 8px 20px rgba(224, 224, 224, 0.5);*/
+    transition: 1s;
+}
+
+.a--btn-chica:hover {
+    zoom: 1.05;
+    /* transform: scale(1.05);*/
+}
+
+.drop--stis {
+    box-shadow: 0px 4px 8px rgb(18 18 18 / 24%);
+    border-radius: 8px;
+}
+
+.tarjetas:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgb(224 224 224);
+}
+
+a.ColorBtn-Cuent {
+    Color: #006fb9 !important;
+    border-color: #006fb9 !important;
+}
+
+
+/*.navar_margin{
+ /*  margin-left: 7rem;
+}*/
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {
+    .multiplica--ventas {
+        margin: 35px 5px;
+    }
+    .vender-- {
+        background-position: bottom;
+        height: 325px;
+        /*padding: 23px 150px;*/
+    }
+    .img--chik {
+        width: 600px;
+    }
+}
+
+@media (max-width: 767px) {
+    .chica-movil-lap {
+        margin-left: 63px;
+    }
+    .img--chik {
+        width: auto;
+    }
+    .p-rt {
+        position: relative;
+        height: 400px;
+    }
+}
+
+@media (max-width: 575px) {
+    .chica-movil-lap {
+        margin-right: 100px;
+    }
+    .vender-- {
+        height: auto;
+    }
+    .btn-vaner-coopel {
+        width: 18rem;
+        margin: 0.75rem 0 1rem;
+        font-family: Helvetica, Arial, sans-serif !important;
+        font-size: 1rem;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: 0.5px;
+        text-align: center;
+        color: #006fb9;
+    }
+    .Center {
+        text-align: center;
+    }
+    svg.Logos-menu {
+        height: 30px;
+        width: 200px;
+    }
+    .chica-movil-lap {
+        width: 252px;
+        height: 205px;
+        margin-top: -10px;
+        margin-right: 50px;
+    }
+    .card-three {
+        width: auto;
+    }
+    .img--chik {
+        width: 92%;
+        height: 280px;
+    }
+}
+
+.productos--cpl {
+    margin: 35px 1.8rem 15px;
+}
+
+.chicocomputadora {
+    width: 26.438rem;
+    height: 22.5rem;
+    margin-left: 4.25rem 0 0;
+    object-fit: contain;
+}
+
+.Guia {
+    box-shadow: 0 -1px 0 #006fb9 inset;
+    color: #153F7E !important;
+}
+
+.Arrow1 {
+    list-style: none
+}
+
+.rallita--- {
+    box-shadow: 0 -1px 0 #006fb9 inset;
+    color: #006fb9;
+}
+
+.FlechitaAzul {
+    color: #006fb9;
+}
+
+@media (max-width: 575px) {
+    .img-amarillo {
+        background-size: 111%;
+    }
+}
+
+@media (max-width: 575px) {
+    .chica-movil-lap {
+        width: 230px;
+        height: 180px;
+        margin-top: -10px;
+        margin-left: -60px;
+    }
+}
+
+
+/***** CLASES AGREGADAS ********/
+
+button.close.tachesito-modal {
+    margin: -5%;
+    width: 0.85rem;
+    height: 3.75rem;
+}
+
+.drp-modal {
+    border-bottom: 1px solid #dee2e6;
+}
+
+@media (max-width: 575px) {
+    .modal-menu {
+        width: 85%;
+        height: 100vh !important;
+    }
+}
+
+.modal-dialog {
+    margin: 0;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 500px;
+        margin: 0;
+    }
+}
+
+span#flechita-cursos {
+    margin-left: 250px;
+    color: black;
+    transition: all 0.25s cubic-bezier(0.57, 0, 0.67, 0.96);
+    transition-delay: 0 !important;
+}
+
+span#flechita-seminario {
+    margin-left: 250px;
+    color: black;
+    transition: all 0.25s cubic-bezier(0.57, 0, 0.67, 0.96);
+    transition-delay: 0 !important;
+}
+
+.open .panel-heading .link .arrow {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.ejemplo-- {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.BordeBtn {
+    border-color: #006fb9!important;
+    Width: 240px;
+    Height: 38px;
+    Border: 24px
+}
+
+.CursosResponsivo {
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    color: #212121;
+}
+
+.btn-outline-primary:not([disabled]):not(.disabled).active,
+.btn-outline-primary:not([disabled]):not(.disabled):active,
+.show>.btn-outline-primary.dropdown-toggle {
+    background-color: white !important;
+}
+
+
+/*.margin-button-cuenta {
+  /* margin-right: 4.3rem ; 
+}*/
+
+.tarjetitas-margin {
+    margin-left: 0 !important;
+}
+
+
+/* computadores laptos */
+
+.flechita-anidada {
+    float: right;
+    margin-top: -85px;
+    margin-left: 140px;
+}
+
+@media (max-width: 1199.98px) {
+    .margin-button-cuenta {
+        margin-right: 0 !important;
+    }
+    .card-f-1 {
+        height: auto;
+    }
+    .tarjetas {
+        width: 85px;
+    }
+    .flechita-anidada {
+        float: right;
+        margin-top: -85px;
+        margin-left: 110px;
+    }
+}
+
+
+/* Tablets grandes y laptop pequeñas */
+
+@media (max-width: 991.98px) {
+    .img-amarillo {
+        background-size: 169%;
+    }
+    .chica-movil-lap {
+        margin-left: 174px;
+    }
+    .mmar-gia {
+        margin-left: 3rem;
+    }
+    .bg-blue {
+        height: auto;
+    }
+    .hijo-multiplicaventas {
+        position: relative;
+    }
+    .navar--margin {
+        margin-left: 1rem;
+    }
+}
+
+
+/* Telefonos grandes y tablets */
+
+@media (max-width: 767.98px) {
+    .chica-movil-lap {
+        margin-left: 60px !important;
+        width: auto;
+        height: 260px;
+    }
+    .Margen {
+        margin: 1rem;
+    }
+    .tarjetitas-nex {
+        padding: 15px;
+    }
+    .chicocomputadora {
+        width: 15rem;
+        height: auto;
+        text-align: center;
+    }
+    .mmar-gia {
+        margin-left: 0;
+    }
+    .EspacioBanner {
+        margin-top: -30px;
+    }
+    .hijo-multiplicaventas {
+        margin-left: 0;
+    }
+}
+
+
+/*  Pantallas muy pequeñas  */
+
+@media (max-width: 575.98px) {
+    .img--chik {
+        width: auto;
+        height: 12rem;
+    }
+    .p-rt {
+        height: 242px;
+    }
+    .chica-movil-lap {
+        margin-right: 48px;
+        margin-top: -28px;
+    }
+    svg.Logos-menu {
+        height: 30px;
+        width: 226px;
+    }
+    /*.br-vender-mas{
+  display: none !important;
+}*/
+    .ff-btn {
+        padding: 10px;
+        margin-top: 1rem !important;
+    }
+    .CentrarLGRespon {
+        width: 14.438rem !important;
+    }
+    .espacio---responsive {
+        margin: 0px 0 30px 0px;
+    }
+    .ajus--responsive {
+        margin-top: 30px;
+    }
+    .nav-coopel {
+        padding: 0 !important;
+    }
+    .navbar-brand {
+        margin-left: 4rem !important;
+        position: absolute;
+    }
+    .ayuda-- {
+        margin-top: 0 !important;
+    }
+    span#flechita-seminario {
+        margin-left: 118px;
+    }
+    span#flechita-cursos {
+        margin-left: 184px;
+    }
+    .MsResponsivo {
+        font-family: Helvetica, Arial, sans-serif !important;
+        font-size: 1rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+        color: #f5f5f5;
+    }
+    .VentasRespons {
+        font-size: 1.8rem !important;
+    }
+}

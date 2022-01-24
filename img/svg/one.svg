@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26.5px" height="26px" viewBox="0 0 26.5 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Sprite/Steps/1</title>
+    <g id="Sprite/Steps/1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#FFE100" cx="12" cy="12" r="12"></circle>
+        <g id="Group" transform="translate(2.500000, 2.000000)">
+            <circle id="Oval" stroke="#212121" stroke-width="0.8" fill="#F7F8FB" cx="12" cy="12" r="11.6"></circle>
+            <path d="M13.498,18 L13.498,6.656 L12.458,6.656 C12.3833333,7.08266667 12.2446667,7.43466667 12.042,7.712 C11.8393333,7.98933333 11.5913333,8.208 11.298,8.368 C11.0046667,8.528 10.6766667,8.63733333 10.314,8.696 C9.95133333,8.75466667 9.578,8.784 9.194,8.784 L9.194,9.872 L12.138,9.872 L12.138,18 L13.498,18 Z" id="1" fill="#212121" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

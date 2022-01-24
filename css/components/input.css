@@ -1,0 +1,98 @@
+
+    /* @font-face {
+        font-family: helvetica neue;
+        src: url({{ asset('css/fonts/Helvetica-Neue-LT-Medium.ttf')
+    } */
+
+    @media screen and (max-width: 800px) {
+        .input-group label {
+
+            font-size: 10px !important;
+        }
+    }
+
+    .input-group {
+        border: none;
+        /* height: 54px; */
+        /* margin-bottom: 10px; */
+        position: relative;
+
+    }
+
+    .input-group input {
+        font-family: helvetica neue, sans-serif;
+        z-index: 0;
+        height: 54px;
+        background-color: #F9F9F9;
+        color: #000000;
+        font-size: 16px;
+        padding: 12px 0 0px 12px;
+        display: inline-block;
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #D8D8D8;
+        border-radius: 8px 0px 0 0;
+        outline: none;
+    }
+
+    .input-group label {
+        z-index: 2;
+        color: #636363;
+        font-size: 16px;
+        position: absolute;
+        height: 21px !important;
+        left: 12px;
+        top: 16px;
+        transition: none !important;
+        pointer-events: none;
+        /* font-weight: 700; */
+    }
+
+    .input-icons i {
+        position: absolute;
+    }
+
+    .input-icons {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .icon {
+        padding: 10px;
+        min-width: 40px;
+    }
+
+    #DatosErrorEmailModal {
+        /*color: rgb(244, 67, 54);*/
+        font-size: 12px;
+        margin-left: 1%;
+        font-family: helvetica neue, sans-serif;
+
+    }
+
+    #MonitorEmail {
+        margin-right: 1.28rem;
+    }
+
+
+
+    #SimboloAlerta {
+        margin-right: 2%;
+        color: #dc3545;
+    }
+
+    #MonitorPassword {
+
+        right: 5.5%;
+        margin-right: 0%;
+        margin-top: 2.5%;
+    }
+
+    .errspan {
+        float: right;
+        margin-right: 18px;
+        top: -46px;
+        position: relative;
+        z-index: 2;
+        color: gray;
+    }

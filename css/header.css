@@ -1,0 +1,31 @@
+.navar_margin {
+    margin-left: 7rem !important;
+}
+
+.m-top-nav {
+    margin-top: 2rem !important;
+}
+
+.nav_form {
+    font-weight: 300;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    height: 65px;
+    background-color: #FFDD30 !important;
+    padding: 0 !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.m_top_container {
+    margin-top: 1.2%;
+}
+
+.CentrarLogo {
+    margin-left: 13%
+}

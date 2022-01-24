@@ -1,0 +1,18 @@
+.custom-blue-buttonperfil {
+    font-family: sans-serif;
+    color: #fff;
+    background-color: #006FB9;
+    border-color: #006FB9;
+    text-align: center;
+    border-radius: 20px;
+    border-width: 1px;
+    box-shadow: none;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    display: inline-block;
+    outline: none;
+    margin-left: 2%;
+}

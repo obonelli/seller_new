@@ -1,0 +1,132 @@
+/* Style the form */
+
+body {
+  background-color: #e5e7eb;
+}
+
+.pasos_superior {
+  text-align: left;
+  margin-top: 7%;
+  margin-bottom: 2%;
+  margin-left: 14%;
+}
+
+#regForm {
+    background-color: #ffffff;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 100px;
+    margin-left: auto;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+    margin-bottom: 15%;
+    border-radius: 0.5rem;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+  
+  /* Style the input fields */
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 10px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+    color: white;
+    background-color: #006FB9;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #04AA6D;
+  }
+
+  .titulo_principal {
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+    color: #111111;
+}
+.titulo_info {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #111111;
+}
+
+.contenedor_inputs {
+  display: flex;
+  margin-top: -2%;
+  margin-bottom: 2rem;
+}
+
+#custom_tab {
+  margin-top: 5%;
+}
+
+.middle_with {
+  width: 35%;
+}
+
+.custom_avance {
+  width: 73%;
+}
+
+.error_disabled {
+  font-size: 12px;
+  margin-left: 3%;
+  color: #757575;
+}
+
+.error_enabled {
+  font-size: 12px;
+  margin-left: 3%;
+  color:red;
+}
+
+.linea {
+  height: 1px;
+  width: 3rem;
+  max-width: 200px;
+  margin-left: 0.4rem;
+  background: #BDBDBD;
+  margin-bottom: 0.2rem;
+  border-radius: 0.5px;
+}
