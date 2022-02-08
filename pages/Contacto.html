@@ -96,7 +96,7 @@
                         <div class="row">
                             <div class="col-md-4 mb-2">
                                 <div class="form-outline">
-                                    <input type="text" id="formTextExample1" class="form-control ajus-contro"
+                                    <input type="text" id="nombres" class="form-control ajus-contro"
                                         aria-describedby="textExample1" />
                                     <label class="form-label" for="formTextExample1">Nombre*</label>
                                 </div>
@@ -107,7 +107,7 @@
 
                             <div class="col-md-4 mb-2">
                                 <div class="form-outline">
-                                    <input type="text" id="formTextExample1" class="form-control ajus-contro"
+                                    <input type="text" id="apellidos" class="form-control ajus-contro"
                                         aria-describedby="textExample1" />
                                     <label class="form-label" for="formTextExample1">Apellidos*</label>
                                 </div>
@@ -121,7 +121,7 @@
                         <div class="row">
                             <div class="col-md-4 mb-2">
                                 <div class="form-outline">
-                                    <input type="text" id="formTextExample1" class="form-control ajus-contro"
+                                    <input type="text" id="celular" class="form-control ajus-contro"
                                         aria-describedby="textExample1" />
                                     <label class="form-label" for="formTextExample1">Teléfono celular*</label>
                                 </div>
@@ -132,7 +132,7 @@
 
                             <div class="col-md-4 mb-2">
                                 <div class="form-outline">
-                                    <input type="text" id="formTextExample1" class="form-control ajus-contro"
+                                    <input type="text" id="correo" class="form-control ajus-contro"
                                         aria-describedby="textExample1" />
                                     <label class="form-label" for="formTextExample1">Correo electrónico*</label>
                                 </div>
@@ -146,7 +146,7 @@
                         <div class="row">
                             <div class="col-md-4 mb-2">
                                 <div class="form-outline">
-                                    <input type="text" id="formTextExample1" class="form-control ajus-contro"
+                                    <input type="text" id="nombrecomercial" class="form-control ajus-contro"
                                         aria-describedby="textExample1" />
                                     <label class="form-label" for="formTextExample1">Nombre comercial en Coppel*</label>
                                 </div>
@@ -168,7 +168,8 @@
             <div class="row">
                 <div class="col-lg-6 text-lg-left">
 
-                    <a class="nav-link SpaceBacklink" href="./MensajeBienvenida.html"> <i class="fas fa-arrow-left roblue"></i>
+                    <a class="nav-link SpaceBacklink" href="./MensajeBienvenida.html"> <i
+                            class="fas fa-arrow-left roblue"></i>
                         Regresa a Inicio</a>
                 </div>
 
@@ -265,19 +266,34 @@
     <script type="text/javascript">
 
         $(document).ready(function () {
-
+            let x = document.cookie;
+            console.log(x);
 
         });
 
         function go_Experience() {
 
             //TODO: validate fields
+            setCookie();
             window.location = "ExperienciaVenta.html";
         }
 
         function validate_Contact() {
 
 
+        }
+
+        function setCookie() {
+            var nombres = document.getElementById('nombres').value;
+            var apellidos = document.getElementById('apellidos').value;
+            var celular = document.getElementById('celular').value;
+            var correo = document.getElementById('correo').value;
+            var nombrecomercial = document.getElementById('nombrecomercial').value;
+            document.cookie = "nombres" + "=" + nombres + ";";
+            document.cookie = "apellidos" + "=" + apellidos + ";";
+            document.cookie = "celular" + "=" + celular + ";";
+            document.cookie = "correo" + "=" + correo + ";";
+            document.cookie = "nombrecomercial" + "=" + nombrecomercial + ";";
         }
 
     </script>

@@ -291,7 +291,8 @@
                             Regresa a Contacto</a>
                     </div>
                     <div class="col-lg-6 text-lg-right">
-                        <button id="" type="button" class="btn btn-crearcuenta btn-primary btn-rounded btn-right btn-derecha"
+                        <button id="" type="button"
+                            class="btn btn-crearcuenta btn-primary btn-rounded btn-right btn-derecha"
                             onclick="go_Data()">
                             Continuar
                         </button>
@@ -381,11 +382,15 @@
 
         $(document).ready(function () {
 
+            let x = document.cookie;
+            console.log(x);
+
         });
 
         function go_Data() {
 
             //TODO: validate fields
+            setCookie()
             window.location = "Datos Oficiales _ General.html";
         }
 
@@ -444,6 +449,58 @@
                 select.disabled = true;
                 select.value = "";
             }
+        }
+
+        function setCookie() {
+            var check_Mercado = document.getElementById('check_Mercado').checked;
+            var lab_Mercado = document.getElementById('lab_Mercado').value;
+
+            var check_Linio = document.getElementById('check_Linio').checked;
+            var lab_Linio = document.getElementById('lab_Linio').value;
+
+            var check_Walmart = document.getElementById('check_Walmart').checked;
+            var lab_Walmart = document.getElementById('lab_Walmart').value;
+
+            var check_Liverpool = document.getElementById('check_Liverpool').checked;
+            var lab_Liverpool = document.getElementById('lab_Liverpool').value;
+
+            var check_Elektra = document.getElementById('check_Elektra').checked;
+            var lab_Elektra = document.getElementById('lab_Elektra').value;
+
+            var check_Otra = document.getElementById('check_Otra').checked;
+            var lab_Otra = document.getElementById('lab_Otra').value;
+            // CheckBox Mercancia coppel
+
+            var rad_Experience1 = document.getElementById('rad_Experience1').checked;
+            var rad_Experience2 = document.getElementById('rad_Experience2').checked;
+            // Selecciona categoria
+
+            var select_Experience = document.getElementById('select_Experience').value;
+
+            document.cookie = "check_Mercado" + "=" + check_Mercado + ";";
+            document.cookie = "lab_Mercado" + "=" + lab_Mercado + ";";
+
+            document.cookie = "check_Linio" + "=" + check_Linio + ";";
+            document.cookie = "lab_Linio" + "=" + lab_Linio + ";";
+
+            document.cookie = "check_Walmart" + "=" + check_Walmart + ";";
+            document.cookie = "lab_Walmart" + "=" + lab_Walmart + ";";
+
+            document.cookie = "check_Liverpool" + "=" + check_Liverpool + ";";
+            document.cookie = "lab_Liverpool" + "=" + lab_Liverpool + ";";
+
+            document.cookie = "check_Elektra" + "=" + check_Elektra + ";";
+            document.cookie = "lab_Elektra" + "=" + lab_Elektra + ";";
+
+            document.cookie = "check_Otra" + "=" + check_Otra + ";";
+            document.cookie = "lab_Otra" + "=" + lab_Otra + ";";
+            // CheckBox Mercancia coppel
+
+            document.cookie = "rad_Experience1" + "=" + rad_Experience1 + ";";
+            document.cookie = "rad_Experience2" + "=" + rad_Experience2 + ";";
+            // Selecciona categoria
+
+            document.cookie = "select_Experience" + "=" + select_Experience + ";";
         }
 
     </script>

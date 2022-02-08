@@ -455,7 +455,14 @@
 
         function start_Form() {
 
+            setCookie();
             window.location = "Contacto.html";
+        }
+
+        function setCookie() {
+            let accept = "aceptoSolicitud";
+            let acceptvalue = "Si";
+            document.cookie = accept + "=" + acceptvalue + ";";
         }
 
     </script>
