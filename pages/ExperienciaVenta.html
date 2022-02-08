@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+    @font-face {
+        font-family: 'CircularStd';
+        src: url('../Fuente/CircularStd-Bold.ttf')format('truetype');
+    }
+
+    @font-face {
+        font-family: 'HelveticaNeue';
+        src: url('../Fuente/HelveticaNeue.ttf')format('truetype');
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Experiencia de Venta</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="../img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="../css/mdb.min.css" />
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <!-- <link href="../css/mdb-pro.min.css" rel="stylesheet"> -->
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+    <!-- <link href="../css/style.min.css" rel="stylesheet"> -->
+
+</head>
+
+<body class="bg-ba--">
+    <!--****♡♡♡♡ MENÚ AMARILLO ♡♡♡♡****-->
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg  navar-1 navar-2 justify-content-start">
+
+        <!-- Navbar brand -->
+        <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#frameModalBottom">
+            <span class=""><img id="myImage" onclick="changeImage()" src="../img/svg/Menu.svg">
+            </span>
+
+        </button>
+
+        <a class="navbar-brand" href="../index.html">
+            <img src="../img/svg/sprite-logo-marketplace.svg"></a>
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse justify-content-end mr-5" id="basicExampleNav">
+        </div>
+
+    </nav>
+    <!--/.Navbar-->
+    <br>
+
+
+    <div class="container mb-3">
+
+        <!--Experiencia de Venta-->
+        <div class="FontCirc ">
+            <label><span class="step active"> <i class="fas fa-check pr-2 IconoPalomita"
+                        aria-hidden="true"></i></span><span class="StylePaginadoTop">Contacto </span><svg
+                    class="linea1Active"></svg></label>
+
+            <label><span class="step active">2</span><span class="StylePaginadoTop HeaderBold">Experiencia de
+                    venta</span><svg class="linea2Dissable"></svg></label>
+            <label><span class="step">3</span><span class="StylePaginadoTop">Datos Oficiales</span><svg
+                    class="linea2Dissable"></svg></label>
+            <label><span class="step">4</span><span class="StylePaginadoTop">Logística</span><svg
+                    class="linea2Dissable"></svg></label>
+            <label><span class="step">5</span><span class="StylePaginadoTop">Documentos</span></label>
+
+
+        </div>
+        <br>
+
+        <div class="row m-3">
+            <div class="col-lg-12 mx-auto EspacioNeg">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="HeaderTitleContacto"><a>Experiencia de venta</a></h4>
+
+                        <p class="HeaderSubTitle">Selecciona las páginas en donde vendes y escribe el enlace de tu
+                            catálogo
+                        </p>
+
+                        <div class="row">
+                            <div class="col-md-2 mb-4 StyleVenta mt-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" name="check_Experience"
+                                        id="check_Mercado" onclick="check_Experience(this)" />
+                                    <label class="form-check-label " for="check_Mercado">Mercado Libre</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-1 ">
+                                <div class="form-outline marnegativo">
+                                    <input type="text" id="lab_Mercado" name="lab_Experience"
+                                        class="form-control ajus-contro rayitainput" aria-describedby="textExample1"
+                                        disabled />
+                                    <label class="form-label text-mercado" for="lab_Mercado">URL de tu catálogo en
+                                        Mercado Libre
+
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-2 mb-4 StyleVenta mt-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" name="check_Experience"
+                                        id="check_Amazon" onclick="check_Experience(this)" />
+                                    <label class="form-check-label " for="check_Amazon">Amazon México</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-1 ">
+                                <div class="form-outline marnegativo">
+                                    <input type="text" id="lab_Amazon" name="lab_Experience"
+                                        class="form-control ajus-contro rayitainput" aria-describedby="textExample1"
+                                        disabled />
+                                    <label class="form-label text-mercado" for="lab_Amazon">URL de tu catálogo en
+                                        Amazon México</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-2 mb-4 StyleVenta mt-2">
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="checkbox" value="" name="check_Experience"
+                                        id="check_Linio" onclick="check_Experience(this)" />
+                                    <label class="form-check-label " for="check_Linio">Linio</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-1">
+                                <div class="form-outline marnegativo">
+                                    <input type="text" id="lab_Linio" name="lab_Experience"
+                                        class="form-control ajus-contro rayitainput" aria-describedby="textExample1"
+                                        disabled />
+                                    <label class="form-label text-mercado" for="lab_Linio">URL de tu catálogo en
+                                        Linio</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-2 mb-4 StyleVenta mt-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" name="check_Experience"
+                                        id="check_Walmart" onclick="check_Experience(this)" />
+                                    <label class="form-check-label " for="check_Walmart">Walmart México</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-1">
+                                <div class="form-outline marnegativo">
+                                    <input type="text" id="lab_Walmart" name="lab_Experience"
+                                        class="form-control ajus-contro rayitainput" aria-describedby="textExample1"
+                                        disabled />
+                                    <label class="form-label text-mercado" for="lab_Walmart">Nombre del negocio con
+                                        el que te registraste en Walmart</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-2 mb-4 StyleVenta mt-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" name="check_Experience"
+                                        id="check_Liverpool" onclick="check_Experience(this)" />
+                                    <label class="form-check-label " for="check_Liverpool">Liverpool</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-1">
+                                <div class="form-outline marnegativo">
+                                    <input type="text" id="lab_Liverpool" name="lab_Experience"
+                                        class="form-control ajus-contro rayitainput" aria-describedby="textExample1"
+                                        disabled />
+                                    <label class="form-label text-mercado" for="lab_Liverpool">URL de tu catálogo en
+                                        Liverpool</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-2 mb-4 StyleVenta mt-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" name="check_Experience"
+                                        id="check_Elektra" onclick="check_Experience(this)" />
+                                    <label class="form-check-label " for="check_Elektra">Elektra</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-1">
+                                <div class="form-outline marnegativo">
+                                    <input type="text" id="lab_Elektra" name="lab_Experience"
+                                        class="form-control ajus-contro rayitainput" aria-describedby="textExample1"
+                                        disabled />
+                                    <label class="form-label text-mercado" for="lab_Elektra">URL de tu catálogo en
+                                        Elektra</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-2 mb-4 StyleVenta mt-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" name="check_Experience"
+                                        id="check_Otra" onclick="check_Experience(this)" />
+                                    <label class="form-check-label " for="check_Otra">Otra tienda</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-1">
+                                <div class="form-outline marnegativo">
+                                    <input type="text" id="lab_Otra" name="lab_Experience"
+                                        class="form-control ajus-contro rayitainput" aria-describedby="textExample1"
+                                        disabled />
+                                    <label class="form-label text-mercado" for="lab_Otra">URL donde podemos
+                                        encontrar tu catálogo</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="HeaderSubTitle">¿Actualmente vendes tu mercancía a Coppel?
+                        </p>
+
+
+
+                        <!-- Default radio -->
+                        <div class="form-check StyleVenta">
+                            <input class="form-check-input inputventa" type="radio" name="rad_Experience"
+                                id="rad_Experience1" value="true" onclick="rad_Experience(this)" />
+                            <label class="form-check-label" for="rad_Experience1">Si</label>
+                        </div>
+
+                        <!-- Default checked radio -->
+                        <div class="form-check StyleVenta">
+                            <input class="form-check-input inputventa" type="radio" name="rad_Experience"
+                                id="rad_Experience2" value="false" onclick="rad_Experience(this)" />
+                            <label class="form-check-label" for="rad_Experience2">No</label>
+                        </div>
+
+                        <hr class="rounded">
+
+                        <p class="HeaderSubTitle">Catálogo</p>
+
+                        <p class="StyleTexto">Selecciona la categoría de la que vendes más productos</p>
+
+
+                        <div class="wrapper-select">
+                            <select id="select_Experience" onchange="this.setAttribute('value', this.value);" value=""
+                                disabled>
+                                <option></option>
+                                <option value="1">Animales y mascotas</option>
+                                <option value="1">Automotriz</option>
+                                <option value="2">Calzado, ropa y accesorios</option>
+                                <option value="3">Celulares y telefonía</option>
+                                <option value="3">Consolas y videojuegos</option>
+                                <option value="3">Deportes y aire libre</option>
+                            </select>
+                            <label for='select_Experience'>
+                                ¿Cuál es tu categoría
+                                principal?*
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row m-3">
+            <d class="col-lg-12 text-lg">
+                <div class="row">
+                    <div class="col-lg-6 text-lg-left">
+                        <a class="nav-link SpaceBacklink" href="./Contacto.html"> <i
+                                class="fas fa-arrow-left roblue1"></i>
+                            Regresa a Contacto</a>
+                    </div>
+                    <div class="col-lg-6 text-lg-right">
+                        <button id="" type="button" class="btn btn-crearcuenta btn-primary btn-rounded btn-right btn-derecha"
+                            onclick="go_Data()">
+                            Continuar
+                        </button>
+                    </div>
+                </div>
+            </d>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-footer pt-4">
+
+        <!-- Footer Text -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row mt-2">
+                <div class="col-md-4 mt-md-0 mt-3  mx-auto text-center">
+                    <a class="links-footer" href="">Quiero vender en Marketplace</a>
+                </div>
+                <div class="col-md-4 mt-md-0 mt-3  mx-auto text-center">
+                    <a class="links-footer" href="">Términos y condiciones</a>
+                </div>
+                <div class="col-md-4 mt-md-0 mt-3  mx-auto text-center">
+                    <a class="links-footer AvisoPfooter" href=""> Aviso de privacidad</a>
+                </div>
+            </div>
+            <!-- Grid row -->
+            <!-- Grid row -->
+            <div class="row">
+                <div class="col-12 mx-auto text-center mt-4">
+                    <p class="text-footer">Todos los precios en Coppel.com son en pesos mexicanos e
+                        incluyen
+                        impuestos.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 col-md-12 mx-auto text-center">
+                    <p class="text-footer">
+                        Los precios y promociones de nuestro sitio web son exclusivos de Coppel.com. Los
+                        abonos
+                        quincenales,
+                        el
+                        plazo o el pago inicial pueden
+                        variar según el margen de crédito y el historial de pago de cada cliente. Los
+                        quincenales
+                        contemplan:
+                        24,
+                        36, 48, 60 o 72 quincenas para
+                        muebles y 16 quincenas para ropa. Los productos de Marketplace que lleves con tu
+                        crédito
+                        Coppel,
+                        cuentan con un plazo de 24 quincenas y son financiados con Coppel Pay.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mx-auto text-center">
+                    <p class="text-footerGris">2022 © Coppel | Todos los derechos reservados</p>
+                </div>
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Text -->
+
+    </footer>
+    <!-- Footer -->
+
+
+
+
+
+    <!-- JQuery -->
+
+
+    <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <!-- <script type="text/javascript" src="../js/popper.min.js"></script> -->
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+        });
+
+        function go_Data() {
+
+            //TODO: validate fields
+            window.location = "Datos Oficiales _ General.html";
+        }
+
+        function validate_Experience() {
+
+        }
+
+        function check_Experience(check) {
+
+            var chk = check.id;
+            chk = chk.substring(chk.indexOf("_"));
+
+            var list_Label = document.getElementsByName("lab_Experience");
+
+            if (check.checked) {
+
+                for (var i = 0; i < list_Label.length; i++) {
+
+                    var current_Label = list_Label[i].id;
+                    var lab = current_Label.substring(current_Label.indexOf("_"));
+
+                    if (chk == lab) {
+
+                        document.getElementById(current_Label).disabled = false;
+                    }
+                }
+
+            } else {
+
+                for (var i = 0; i < list_Label.length; i++) {
+
+                    var current_Label = list_Label[i].id;
+                    lab = current_Label.substring(current_Label.indexOf("_"));
+
+                    if (chk == lab) {
+
+                        element = document.getElementById(current_Label);
+
+                        element.disabled = true;
+                        element.value = "";
+                    }
+                }
+            }
+        }
+
+        function rad_Experience(radio) {
+
+            var select = document.getElementById("select_Experience");
+
+            if (radio.value == "true") {
+
+                select.disabled = false;
+
+            } else {
+
+                select.disabled = true;
+                select.value = "";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

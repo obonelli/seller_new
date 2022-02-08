@@ -1,0 +1,1230 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    background: #E5E5E5 !important;
+
+
+}
+
+.SMargin {
+    margin-right: 10px;
+}
+
+/*Fuentes Agrgadas Inicio*/
+
+.StyleTexto {
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #111111;
+}
+
+.StyleTextoMensajeIcon {
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #111111;
+    margin-top: 2.5px;
+    margin-left: -61px;
+}
+
+.espacio {
+    margin-left: 3px;
+}
+
+.espaciocheck {
+    margin-left: 15px;
+}
+
+.Subtitle.Medium {
+    /* //styleName: Web/Subtitle/Subtitle 1 Medium; */
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #111111;
+}
+
+.StyloLetraCardsSmall {
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #111111;
+    padding-top: 8px;
+}
+
+
+.DuoCardsSmall {
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #111111;
+    padding-top: 1px;
+}
+
+
+.StyleTextoTitle {
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #111111;
+    margin-left: 20px;
+}
+
+.StyleVenta {
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #212121;
+}
+
+
+.linkfooTerminos {
+
+    color: #006fb9;
+    text-decoration: underline;
+}
+
+.StyleGrisInputs {
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+    color: #757575;
+    margin-left: 10px;
+}
+
+
+
+
+.form-text {
+    margin-top: 0.25rem;
+    height: 16px;
+    left: 16px;
+    right: 16px;
+    top: 52px;
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+    color: #757575;
+}
+
+.form-outline {
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: 0.5px;
+    color: #BDBDBD !important;
+}
+
+
+.form-outline .form-control~.form-label {
+    position: absolute;
+    top: 11px;
+    color: #757575;
+}
+
+
+
+/*Fuentes Agrgadas Final*/
+
+.navbar-brand img {
+    margin-left: 7.25rem;
+}
+
+.EspacioNeg {
+    margin-top: -45px;
+}
+
+.EspacioCard2 {
+    margin-top: -32px;
+}
+
+.HeaderTitle {
+    font-family: 'CircularStd', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 30px;
+    color: #111111;
+
+}
+
+.HeaderTitleMensaje {
+    font-family: 'CircularStd', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 30px;
+    color: #111111;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+
+.HeaderTitleContacto {
+    font-family: 'CircularStd', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 30px;
+    color: #111111;
+
+}
+
+.HeaderSubTitle {
+    font-family: 'CircularStd', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #111111;
+}
+
+.Terminos y condiciones {
+    position: absolute;
+    height: 16px;
+    left: 41.46%;
+    right: 44.88%;
+    top: calc(50% - 16px/2);
+    font-style: normal;
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+
+}
+
+.links-footer {
+    /* font-family:Helvetica, sans-serif; 
+        font-size: 0.875rem;
+        text-decoration: underline;  
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #FFFFFF;  
+        mix-blend-mode: normal;
+        opacity: 0.9; /* CambiosEncontrados */
+    font-family: Helvetica, sans-serif;
+    text-decoration: underline;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+}
+
+.navar-1 {
+    background-color: #ffe143;
+
+}
+
+
+.card {
+    /*position: absolute;*/
+    border-radius: 8px;
+    font-weight: 400;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(18, 18, 18, 0.08);
+    border-radius: 8px;
+    margin: 24px 0px;
+
+}
+
+
+.links-footer:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.text-footer {
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    /* line-height: normal; /* CambiosEncontrados */
+    line-height: 21px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.AvisoPfooter {
+    padding-left: 53px;
+}
+
+.text-footerGris {
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: rgba(189, 189, 189, 1)
+}
+
+
+.btn-crearcuenta {
+    position: absolute;
+    width: 312px;
+    Height: 40px;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    border-radius: 24px;
+    text-transform: initial;
+    background-color: #006fb9 !important;
+    /* CambiosEncontrados */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.btn-right {
+    right: 99px;
+}
+
+.btn-right.btn-derecha {
+    right: 45px;
+}
+
+.btn:disabled {
+    background: #E0E0E0 !important;
+    color: #757575;
+    opacity: 1 !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    letter-spacing: 0.5px;
+}
+
+.form-check-input[type=checkbox]:checked:focus {
+    background-color: #006FB9;
+    border-color: #006FB9 !important;
+    /* CambiosEncontrados */
+}
+
+.form-check-input:checked:focus:before {
+    box-shadow: none;
+    transform: scale(1);
+    transition: box-shadow .2s, transform .2s;
+}
+
+.form-check-input:hover:before {
+    opacity: 9;
+    box-shadow: none !important;
+}
+
+.form-check-input:focus:before {
+    opacity: .12;
+    box-shadow: none;
+    transform: scale(1);
+    transition: none;
+}
+
+.btn-crearcuenta:hover {
+    opacity: rgba(0, 0, 0, 3.69) !important;
+
+}
+
+.button.btn.btn-crearcuenta.btn-primary:hover {
+    background-color: #006fb9 !important;
+}
+
+
+.form-check-input[type=checkbox]:checked {
+    background-image: none;
+    background-color: #006FB9;
+
+}
+
+.fer {
+    /* CambiosEncontrados */
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.25px;
+    color: #757575 !important;
+
+}
+
+.form-check-input {
+    border-color: #BDBDBD !important;
+}
+
+.bg-footer {
+    background-color: #192C39;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.form-control.ajus-contro:focus {
+    border: none !important;
+    /* border-bottom: 1px  #006FB9 !important; /* CambiosEncontrados */
+    border-bottom: 1px #9E9E9E !important;
+}
+
+.form-outline .form-control:focus~.form-notch .form-notch-leading {
+    border-top: 0.125rem solid transparent;
+    /* border-bottom: 0.125rem solid #006FB9;  /* CambiosEncontrados  */
+    border-bottom: 0.125rem solid #9E9E9E;
+    border-left: 0.125rem solid transparent;
+
+}
+
+
+.form-outline .form-control:focus~.form-notch .form-notch-middle {
+    /* border-bottom: 0.125rem solid #006FB9;  /* CambiosEncontrados  */
+    border-bottom: 0.125rem solid #9E9E9E;
+
+}
+
+.form-outline .form-control:focus~.form-notch .form-notch-trailing {
+    border-top: 0.125rem solid transparent;
+    /* border-bottom: 0.125rem solid #006FB9;/* CambiosEncontrados */
+    border-bottom: 0.125rem solid #9E9E9E;
+    border-right: 0.125rem solid transparent;
+}
+
+.form-outline .form-control:focus~.form-label {
+    /* CambiosEncontrados */
+    color: #757575;
+}
+
+.form-control.ajus-contro {
+    box-shadow: inset 0px -1px 0px #BDBDBD;
+    height: 48px;
+    border-radius: 8px;
+    /* padding: 0.375rem 0.75rem !important;
+        font-size: 12px;
+        border:none !important; /* CambiosEncontrados*/
+    padding: 1.75rem 0.75rem 9.2px !important;
+    font-size: 16px;
+    border: none !important;
+    font-family: Helvetica, sans-serif;
+    color: #212121;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+}
+
+.form-outline .form-control~.form-label {
+    position: absolute;
+    top: 11px;
+}
+
+.form-outline .form-control~.form-notch div {
+    pointer-events: none;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+.form-check-input:checked {
+    border-color: red;
+}
+
+form-check-input[type=checkbox]:checked:focus {
+    background-color: #006FB9;
+    border-color: #006FB9;
+}
+
+/*logistica*/
+h1.Headline {
+    /* styleName: Web/Headline/H1 Bold; */
+    font-family: 'CircularStd', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+    text-align: left;
+}
+
+h2.Headline {
+    /* //styleName: Web/Headline/H2 Bold; */
+    font-family: 'CircularStd', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.hasError {
+    /* //styleName: Web/Input Field/Label; */
+    color: #F44336 !important;
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+    text-align: left;
+}
+
+.input-invalid {
+    padding-right: calc(1.5em + 0.75rem) !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: right calc(0.375em + 0.1875rem) center !important;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem) !important;
+}
+
+.borderHasError {
+    box-shadow: inset 0px -1px 0px #F44336 !important;
+}
+
+.ml {
+    margin-left: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+input[type="text"].form-control, select.form-select {
+    border-radius: 8px 8px 0px 0px !important;
+    background-color: #F5F5F5 !important;
+    border-left: 1px solid transparent;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    height: 48px !important;
+}
+
+.label-select {
+    font-family: Helvetica, sans-serif !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 24px !important;
+    letter-spacing: 0.5px !important;
+    text-align: left !important;
+    color: #757575 !important;
+    margin-left: 12px;
+}
+
+/* active state */
+.select-text-material:focus~.label-select {
+    color: #757575;
+    top: 0px;
+    left: 10px;
+    transition: 0.2s ease all;
+    font-size: 12px !important;
+}
+
+/* documentos */
+input[type="file"].form-control, .label-file-control {
+    border-radius: 8px 8px 0px 0px !important;
+    background-color: #F5F5F5 !important;
+    border-left: 1px solid transparent;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    height: 48px !important;
+    cursor: pointer !important;
+    padding: 1rem 0.75rem 9.2px !important;
+    /* //styleName: Web/Input Field/Placeholder; */
+    font-family: Helvetica, sans-serif !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 24px !important;
+    letter-spacing: 0.5px !important;
+    text-align: left !important;
+    box-shadow: inset 0px -1px 0px #bdbdbd;
+}
+
+ul.lista-documentos {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #111111;
+    padding-left: 20px !important;
+}
+
+p.help-text {
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+    text-align: left;
+
+}
+
+p.special-help-text {
+    /* //styleName: Web/Caption/Regular; */
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    /* or 123% */
+
+    letter-spacing: 0.4px;
+
+    color: #111111;
+}
+
+.SubHeader {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    color: #111111;
+    margin-top: -15px;
+
+
+}
+
+
+
+.information-container {
+    max-width: 44px;
+}
+
+.text-information {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.4000000059604645px;
+    text-align: left;
+    color: #111111;
+}
+
+/* Thank you */
+.card710w {
+    max-width: 710px;
+    height: 557px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.h1.bold {
+    /* //styleName: Web/Headline/H1 Bold; */
+    font-family: 'CircularStd', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+    text-align: left;
+
+}
+
+.h2.bold {
+    /* //styleName: Web/Headline/H2 Bold; */
+    font-family: 'CircularStd', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.body.medium {
+    /* //styleName: Web/Body/Body 1/Medium; */
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.link.regular {
+
+    /* //styleName: Web/Link/Link 1 Regular Underline; */
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-decoration: underline;
+    color: #006fb9;
+}
+
+.body.regular {
+    /* //styleName: Web/Body/Body 1/Regular; */
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+
+}
+
+.Button.Medium {
+    /* //styleName: Web/Button/Button Medium; */
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: none !important;
+    width: 200px;
+    height: 40px;
+
+}
+
+.Button.Medium:hover {
+    background-color: #006fb9 !important;
+}
+
+.bg.primary {
+    background: #006FB9 !important;
+}
+
+.color.primary {
+    color: #006FB9 !important;
+}
+
+.rayitainput {
+    box-shadow: none !important;
+}
+
+.form-outline .form-control~.form-label.text-mercado {
+    color: #BDBDBD !important;
+
+}
+
+.form-check-input.inputventa[type=radio]:checked:after {
+    background-color: #006FB9 !important;
+
+}
+
+.form-check-input.inputventa:checked {
+    border-color: #006FB9 !important;
+}
+
+.inputventas:focus-visible {
+    color: transparent !important;
+}
+
+.marnegativo {
+    margin-top: -7px;
+}
+
+.wrap {
+
+    right: 0;
+    top: 40%;
+    width: 350px;
+    left: 0;
+    /* margin: 0 auto; */
+}
+
+/* select starting stylings ------------------------------*/
+.select-material {
+    font-family:
+        'Roboto', 'Helvetica', 'Arial', sans-serif;
+    position: relative;
+    /* width: 350px; */
+}
+
+.select-text-material {
+    position: relative;
+    font-family: inherit;
+    background-color: transparent;
+    /* width: 350px; */
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* Remove focus */
+.select-text-material:focus {
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+/* Use custom arrow */
+.select-material .select-text-material {
+    appearance: none;
+    -webkit-appearance: none
+}
+
+.select-material:after {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    /* Styling the down arrow */
+    width: 0;
+    height: 0;
+    padding: 0;
+    /* content: ''; */
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid rgba(0, 0, 0, 0.12);
+    pointer-events: none;
+}
+
+
+/* LABEL ======================================= */
+.select-label-material {
+    color: rgba(0, 0, 0, 0.26);
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 0px !important;
+    top: 10px;
+    transition: 0.2s ease all;
+}
+
+/* active state */
+.select-text-material:focus~.select-label-material {
+    color: #757575;
+    top: 0px;
+    left: 10px;
+    transition: 0.2s ease all;
+    font-size: 14px;
+}
+
+.select-text-material:valid~.select-label-material {
+    display: none;
+}
+
+.form-select:focus {
+    border-color: transparent !important;
+    outline: 0;
+    box-shadow: inset 0 0 0 0 #9E9E9E;
+}
+
+
+/* BOTTOM BARS ================================= */
+.select-bar-material {
+    position: relative;
+    display: block;
+    /* width: 350px; */
+}
+
+.select-bar-material:before, .select-bar-material:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #9E9E9E;
+    transition: 0.2s ease all;
+}
+
+.select-bar-material:before {
+    left: 50%;
+}
+
+.select-bar-material:after {
+    right: 50%;
+}
+
+/* active state */
+.select-text-material:focus~.select-bar-material:before, .select-text-material:focus~.select-bar-material:after {
+    width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.select-highlight-material {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+
+.HeaderSmall {
+
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+
+
+    letter-spacing: 0.4px;
+
+    color: #1C1C1C;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 4px 0px;
+
+}
+
+.SpaceBacklink {
+    margin-left: 80px;
+    color: #006FB9 !important;
+    /* Revisar no lee el color ================================== */
+}
+
+.wrapper-select {
+    position: relative;
+    font-family: Helvetica, sans-serif;
+
+}
+
+.wrapper-input>select,
+.wrapper-input>select~label {
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    touch-action: manipulation;
+}
+
+.wrapper-select select {
+    width: 320px;
+    display: block;
+    background-color: #F5F5F5;
+    font-size: 16px;
+    color: #212121;
+    box-shadow: inset 0 -1px 0 0 #9E9E9E;
+    font-family: inherit;
+    border: none !important;
+
+    border-radius: 8px 8px 0 0;
+    padding: 20px 0px 10px 12px;
+}
+
+.wrapper-select>label {
+    -webkit-transform-origin-x: 0;
+    position: absolute;
+    top: 16px;
+    padding-left: 12px;
+    color: #757575;
+}
+
+.wrapper-select>select:not([value=""]):valid,
+.wrapper-select>select:focus {
+    outline: 0;
+    box-shadow: inset 0 -2px 0 0 #0070bf;
+}
+
+.wrapper-select>select:not([value=""]):valid~label,
+.wrapper-input>input:focus~label {
+    transform: translate(0, -15px) scale(0.8);
+    color: #0070bf;
+}
+
+
+.EspacioThankyU {
+    margin-top: 1px;
+}
+
+.SmallThankyu {
+
+    font-family: 'Helvetica', sans-serif;
+    font-size: 13px;
+    ;
+
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: #1C1C1C;
+
+    margin-left: 24px;
+    margin-top: -6px;
+
+}
+
+.IconThankYou {
+    width: 75.65px;
+    margin-left: 280px;
+}
+
+.LetraBotton {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
+
+.CardSmall {
+    box-shadow: 0 2px 4px 0 rgba(18, 18, 18, 0.08);
+    border-radius: 4px;
+    height: 40px;
+
+}
+
+.MarginIconCard {
+    margin-left: -3px;
+}
+
+.MarginSmallSubtitle {
+    margin-top: -15px;
+}
+
+.EspacioCard1 {
+    padding-left: 40px;
+}
+
+.EspacioCard2 {
+    margin-left: -110px;
+}
+
+.roblue {
+    margin-left: -15px;
+}
+
+.roblue1 {
+    margin-left: -85px;
+}
+
+.roblue2 {
+    margin-left: -116px;
+}
+
+.controlajust {
+    margin-left: 258px;
+}
+
+.Spaciop {
+    margin-left: -14px;
+}
+
+.MSmSubtitle1 {
+    margin-top: -15px;
+}
+
+.IconSmallEs {
+    margin-top: -3px;
+}
+
+.BtnSpacio {
+    margin-left: -120px;
+}
+
+.mrgIcon3 {
+    margin-top: 7.5px;
+}
+
+
+
+.MginBton1 {
+    margin-bottom: -9px;
+    margin-left: -25px;
+}
+
+.mrgB1 {
+
+    margin-left: 79px;
+
+}
+
+
+
+
+.mrgIcon {
+    margin-top: -1.5px;
+}
+
+.CardIcSpac {
+    margin-left: 92px;
+}
+
+
+
+
+.BotonThakyU {
+    width: 312px;
+    height: 48px;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: none !important;
+    margin-top: -6px;
+}
+
+.margininputs {
+
+    margin-top: 6px !important;
+
+}
+
+.pasos_superior {
+    text-align: left;
+    margin-top: 7%;
+    margin-bottom: 2%;
+    margin-left: 14%;
+}
+
+.step.active {
+    opacity: 1;
+    color: white;
+    background-color: #006FB9;
+    padding-top: 2px;
+
+}
+
+.stepactivecheck {
+    opacity: 1;
+    color: white;
+    background-color: #006FB9;
+    padding-top: 2px;
+    margin-left: 54px;
+}
+
+
+
+
+
+.step {
+    /* padding-top: 5px; */
+    /* padding-bottom: 13px; */
+    padding-left: 9.5px;
+    padding-right: 18px;
+    height: 26px;
+    width: 26px;
+    /* margin: 0 2px; */
+    background-color: #BDBDBD;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    padding-top: 2px;
+    color: #212121;
+    margin-left: 8px;
+}
+
+.linea1Active {
+    height: 1px;
+    width: 65px;
+    max-width: 200px;
+    margin-left: 0.4rem;
+    background: #006FB9;
+    margin-bottom: 0.2rem;
+    border-radius: 0.5px;
+    margin-top: 3px;
+
+}
+
+.linea2Dissable {
+    height: 1px;
+    width: 65px;
+    max-width: 200px;
+    margin-left: 0.4rem;
+    background: #BDBDBD;
+    margin-bottom: 0.2rem;
+    border-radius: 0.5px;
+}
+
+.FontCirc {
+    font-family: 'Helvetica', sans-serif !important;
+    size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #212121;
+    margin-top: 6px !important;
+    margin-left: 28px
+}
+
+.StylePaginadoTop {
+    margin-left: 10px !important;
+}
+
+.IconoPalomita {
+    font-size: 12px;
+    margin-left: -1px
+}
+
+.HeaderBold {
+    font-weight: 550;
+}
+
+.TextCargaHeader {
+    font-family: 'Helvetica', sans-serif !important;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: #111111;
+    margin-left: -100px;
+    margin-top: 14px;
+
+}
+
+.EspacioNeg123 {
+    margin-top: -33px;
+}
