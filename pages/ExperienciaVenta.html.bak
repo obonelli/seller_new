@@ -243,14 +243,14 @@
                         <!-- Default radio -->
                         <div class="form-check StyleVenta">
                             <input class="form-check-input inputventa" type="radio" name="rad_Experience"
-                                id="rad_Experience1" value="true" />
+                                id="rad_Experience1" value="true" onclick="rad_Experience(this)" />
                             <label class="form-check-label" for="rad_Experience1">Si</label>
                         </div>
 
                         <!-- Default checked radio -->
                         <div class="form-check StyleVenta">
                             <input class="form-check-input inputventa" type="radio" name="rad_Experience"
-                                id="rad_Experience2" value="false" />
+                                id="rad_Experience2" value="false" onclick="rad_Experience(this)" />
                             <label class="form-check-label" for="rad_Experience2">No</label>
                         </div>
 
@@ -262,7 +262,8 @@
 
 
                         <div class="wrapper-select">
-                            <select id="select_Experience" onchange="this.setAttribute('value', this.value);" value="">
+                            <select id="select_Experience" onchange="this.setAttribute('value', this.value);" value=""
+                                disabled>
                                 <option></option>
                                 <option value="1">Animales y mascotas</option>
                                 <option value="2">Automotriz</option>

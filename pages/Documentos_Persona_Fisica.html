@@ -75,7 +75,7 @@
           class="StylePaginadoTop">Datos Oficiales</span><svg class="linea1Active"></svg></label>
       <label><span class="step active"> <i class="fas fa-check pr-2 IconoPalomita" aria-hidden="true"></i></span><span
           class="StylePaginadoTop">Logística </span><svg class="linea1Active"></svg></label>
-      <label><span class="step active">4</span><span class="StylePaginadoTop HeaderBold">Documentos</span>
+      <label><span class="step active">5</span><span class="StylePaginadoTop HeaderBold">Documentos</span>
 
     </div>
 
@@ -126,7 +126,7 @@
                 </button>
               </div>
               <div class="col-md-2">
-                <label class="text-helper TextCargaHeader" for="fileRFC">
+                <label class="text-helper" for="fileRFC">
 
                 </label>
               </div>
@@ -159,7 +159,7 @@
                 </button>
               </div>
               <div class="col-md-2">
-                <label class="text-helper TextCargaHeader" for="fileIdentificacion">
+                <label class="text-helper" for="fileIdentificacion">
 
                 </label>
               </div>
@@ -192,7 +192,7 @@
                 </button>
               </div>
               <div class="col-md-2">
-                <label class="text-helper TextCargaHeader" for="fileEstadoCuenta">
+                <label class="text-helper" for="fileEstadoCuenta">
 
                 </label>
               </div>
@@ -200,6 +200,21 @@
 
             <br>
 
+ <!-- Funcion para cargar archivo
+            <div class="row">
+              <div class="col-md-5">
+                <div class="form-outline">
+                  <label for="formControlReadonly" class="form-control label-file-control">Elegir archivo para
+                    subir</label>
+                  <input class="form-control ajus-contro" hidden id="formControlReadonly" type="file" />
+                </div>
+              </div>
+              <div class="col-md-4 text-left">
+                <button type="button" class="btn btn-primary btn-rounded Button Medium bg primary">Elegir
+                  archivo</button>
+              </div>
+            </div>
+             Fin de la funcion  -->
           </div>
         </div>
       </div>
@@ -299,15 +314,13 @@
   <script type="text/javascript" src="../js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="../js/mdb.min.js"></script>
+  <script type="text/javascript" src="../js/validate.js"></script> 
   <script type="text/javascript">
     $(document).ready(function () {
-      $("input.inputFile").change(function () {
-        var id = $(this).attr("id");
-        var fullPath = $(this).val();
-        var filename = /([^\\]+)$/.exec(fullPath)[1];
-        $("label.text-helper[for=" + id + "]").html(filename);
-
-      });
+    	
+    	validarDocumentos();
+    	
+     
     });
 
     function go_Thanks() {

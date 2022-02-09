@@ -233,7 +233,7 @@
             </div>
 
             <br>
-            <!-- Funcion para cargar archivo
+ <!-- Funcion para cargar archivo
             <div class="row">
               <div class="col-md-5">
                 <div class="form-outline">
@@ -350,7 +350,13 @@
   <script type="text/javascript" src="../js/validate.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
-      validarDocumentos();
+      $("input.inputFile").change(function () {
+        var id = $(this).attr("id");
+        var fullPath = $(this).val();
+        var filename = /([^\\]+)$/.exec(fullPath)[1];
+        $("label.text-helper[for=" + id + "]").html(filename);
+
+      });
     });
 
     function go_Thanks() {

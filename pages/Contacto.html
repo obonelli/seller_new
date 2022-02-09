@@ -60,132 +60,136 @@
     </nav>
     <!--/.Navbar-->
     <br>
+    <form id="form-contact" action="" method="" onsubmit="">
 
-    <div class="container mb-3">
-        <!--Paginado Contacto -->
-        <div class="FontCirc ">
-            <label><span class="step active">1</span><span class="StylePaginadoTop HeaderBold">Contacto </span><svg
-                    class="linea2Dissable"></svg></label>
-            <label><span class="step">2</span><span class="StylePaginadoTop">Experiencia de venta</span><svg
-                    class="linea2Dissable"></svg></label>
-            <label><span class="step">3</span><span class="StylePaginadoTop">Datos Oficiales</span><svg
-                    class="linea2Dissable"></svg></label>
-            <label><span class="step">4</span><span class="StylePaginadoTop">Logística</span><svg
-                    class="linea2Dissable"></svg></label>
-            <label><span class="step">5</span><span class="StylePaginadoTop">Documentos</span></label>
-
-
-        </div>
-
-        <br>
-        <div class="row m-3">
-            <div class="col-lg-12 mx-auto EspacioNeg">
-                <!-- Card 1 -->
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="HeaderTitleContacto"><a>Contacto</a></h4>
-
-                        <p class="HeaderSubTitle"> Información de quién será el contacto directo con Coppel Marketplace
-                        </p>
-
-                        <p class="StyleTexto">
-                            * Estos datos son <b>obligatorios</b> para continuar con el proceso.
-                        </p>
+        <div class="container mb-3">
+            <!--Paginado Contacto -->
+            <div class="FontCirc ">
+                <label><span class="step active">1</span><span class="StylePaginadoTop HeaderBold">Contacto </span><svg
+                        class="linea2Dissable"></svg></label>
+                <label><span class="step">2</span><span class="StylePaginadoTop">Experiencia de venta</span><svg
+                        class="linea2Dissable"></svg></label>
+                <label><span class="step">3</span><span class="StylePaginadoTop">Datos Oficiales</span><svg
+                        class="linea2Dissable"></svg></label>
+                <label><span class="step">4</span><span class="StylePaginadoTop">Logística</span><svg
+                        class="linea2Dissable"></svg></label>
+                <label><span class="step">5</span><span class="StylePaginadoTop">Documentos</span></label>
 
 
-                        <div class="row">
-                            <div class="col-md-4 mb-2">
-                                <div class="form-outline">
-                                    <input type="text" id="nombres" class="form-control ajus-contro"
-                                        aria-describedby="textExample1" />
-                                    <label class="form-label" for="formTextExample1">Nombre*</label>
+            </div>
+
+            <br>
+            <div class="row m-3">
+                <div class="col-lg-12 mx-auto EspacioNeg">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="HeaderTitleContacto"><a>Contacto</a></h4>
+
+                            <p class="HeaderSubTitle"> Información de quién será el contacto directo con Coppel
+                                Marketplace
+                            </p>
+
+                            <p class="StyleTexto">
+                                * Estos datos son <b>obligatorios</b> para continuar con el proceso.
+                            </p>
+
+
+                            <div class="row">
+                                <div class="col-md-4 mb-2">
+                                    <div class="form-outline">
+                                        <input type="text" id="nombres" class="form-control ajus-contro"
+                                            aria-describedby="textExample1" maxlength="50" />
+                                        <label class="form-label" for="nombres">Nombre*</label>
+                                    </div>
+                                    <div id="textExample1" class="StyleGrisInputs">
+                                        <small>Persona que será encargada de la cuenta en Coppel</small>
+                                    </div>
                                 </div>
-                                <div id="textExample1" class="StyleGrisInputs">
-                                    <small>Persona que será encargada de la cuenta en Coppel</small>
-                                </div>
-                            </div>
 
-                            <div class="col-md-4 mb-2">
-                                <div class="form-outline">
-                                    <input type="text" id="apellidos" class="form-control ajus-contro"
-                                        aria-describedby="textExample1" />
-                                    <label class="form-label" for="formTextExample1">Apellidos*</label>
-                                </div>
-                                <div id="textExample1" class="StyleGrisInputs">
-                                    <small>Completa el campo</small>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="row">
-                            <div class="col-md-4 mb-2">
-                                <div class="form-outline">
-                                    <input type="text" id="celular" class="form-control ajus-contro"
-                                        aria-describedby="textExample1" />
-                                    <label class="form-label" for="formTextExample1">Teléfono celular*</label>
-                                </div>
-                                <div id="textExample1" class="StyleGrisInputs">
-                                    <small>Escribe el número a 10 dígitos</small>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 mb-2">
-                                <div class="form-outline">
-                                    <input type="text" id="correo" class="form-control ajus-contro"
-                                        aria-describedby="textExample1" />
-                                    <label class="form-label" for="formTextExample1">Correo electrónico*</label>
-                                </div>
-                                <div id="textExample1" class="StyleGrisInputs">
-                                    <small>Será el correo principal de tu cuenta en Coppel</small>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="row">
-                            <div class="col-md-4 mb-2">
-                                <div class="form-outline">
-                                    <input type="text" id="nombrecomercial" class="form-control ajus-contro"
-                                        aria-describedby="textExample1" />
-                                    <label class="form-label" for="formTextExample1">Nombre comercial en Coppel*</label>
-                                </div>
-                                <div id="textExample1" class="StyleGrisInputs">
-                                    <small>Escribe el nombre con el que se va a mostrar el negocio</small>
+                                <div class="col-md-4 mb-2">
+                                    <div class="form-outline">
+                                        <input type="text" id="apellidos" class="form-control ajus-contro"
+                                            aria-describedby="textExample1" maxlength="100" />
+                                        <label class="form-label" for="apellidos">Apellidos*</label>
+                                    </div>
+                                    <div id="textExample1" class="StyleGrisInputs">
+                                        <small>Completa el campo</small>
+                                    </div>
                                 </div>
                             </div>
 
 
+                            <div class="row">
+                                <div class="col-md-4 mb-2">
+                                    <div class="form-outline">
+                                        <input type="text" id="celular" class="form-control ajus-contro onlyNumbers"
+                                            aria-describedby="textExample1" maxlength="10" />
+                                        <label class="form-label" for="celular">Teléfono celular*</label>
+                                    </div>
+                                    <div id="textExample1" class="StyleGrisInputs">
+                                        <small>Escribe el número a 10 dígitos</small>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-2">
+                                    <div class="form-outline">
+                                        <input type="text" id="correo" class="form-control ajus-contro"
+                                            aria-describedby="textExample1" maxlength="100" />
+                                        <label class="form-label" for="correo">Correo electrónico*</label>
+                                    </div>
+                                    <div id="textExample1" class="StyleGrisInputs">
+                                        <small>Será el correo principal de tu cuenta en Coppel</small>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-4 mb-2">
+                                    <div class="form-outline">
+                                        <input type="text" id="nombrecomercial" class="form-control ajus-contro"
+                                            aria-describedby="textExample1" />
+                                        <label class="form-label" for="nombrecomercial">Nombre comercial en
+                                            Coppel*</label>
+                                    </div>
+                                    <div id="textExample1" class="StyleGrisInputs">
+                                        <small>Escribe el nombre con el que se va a mostrar el negocio</small>
+                                    </div>
+                                </div>
+
+
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="row m-3">
-        <d class="col-lg-12 text-lg">
-            <div class="row">
-                <div class="col-lg-6 text-lg-left">
+        <div class="row m-3">
+            <d class="col-lg-12 text-lg">
+                <div class="row">
+                    <div class="col-lg-6 text-lg-left">
 
-                    <a class="nav-link SpaceBacklink" href="./MensajeBienvenida.html"> <i
-                            class="fas fa-arrow-left roblue"></i>
-                        Regresa a Inicio</a>
+                        <a class="nav-link SpaceBacklink" href="./MensajeBienvenida.html"> <i
+                                class="fas fa-arrow-left roblue"></i>
+                            Regresa a Inicio</a>
+                    </div>
+
+                    <div class="col-lg-6 text-lg-right">
+
+                        <button id="btn_Contact" type="submit"
+                            class="btn btn-crearcuenta btn-primary btn-rounded waves-effect btn-right">
+                            <!-- <a href="../pages/ExperienciaVenta.html" style="color:white;">Continuar</a> -->
+                            Continuar
+                        </button>
+                        <br>
+                    </div>
                 </div>
-
-                <div class="col-lg-6 text-lg-right">
-
-                    <button id="btn_Contact" type="button"
-                        class="btn btn-crearcuenta btn-primary btn-rounded waves-effect btn-right"
-                        onclick="go_Experience()">
-                        <!-- <a href="../pages/ExperienciaVenta.html" style="color:white;">Continuar</a> --> Continuar
-                    </button>
-                    <br>
-                </div>
-            </div>
-        </d>
-    </div>
-
+            </d>
+        </div>
+    </form>
 
 
 
@@ -263,24 +267,107 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="../js/mdb.min.js"></script>
 
+    <script type="text/javascript" src="../js/validate.js"></script>
     <script type="text/javascript">
 
         $(document).ready(function () {
+            validarContacto();
             let x = document.cookie;
             console.log(x);
-            checkCookie()
+            checkCookie();
+
+            $("form#form-contact").submit(function (e) {
+                // Stop default form Submit.
+                e.preventDefault();
+
+                // Call Ajax Submit.
+                go_Experience();
+            });
+
+            //TODO:review
+            if ($('input.ajus-contro').val().length>0) {
+
+                $('input.ajus-contro').addClass("active");
+
+            } else {
+
+                $('input.ajus-contro').removeClass("active");
+            }
 
         });
 
         function go_Experience() {
 
             //TODO: validate fields
-            setCookie();
-            window.location = "ExperienciaVenta.html";
+            if (validate_Contact()) {
+
+                setCookie();
+                window.location = "ExperienciaVenta.html";
+            }
+
         }
 
         function validate_Contact() {
 
+            var nombres = document.getElementById("nombres");
+            var apellidos = document.getElementById("apellidos");
+            var celular = document.getElementById("celular");
+            var correo = document.getElementById("correo");
+            var nombrecomercial = document.getElementById("nombrecomercial");
+
+            var error = 0;
+
+            if (nombres.value.length > 0) {
+                ocultarErrorEnInput($('input#nombres'));
+            } else {
+                muestraErrorEnInput($('input#nombres'), "El campo nombre es requerido.");
+                error++;
+            }
+
+            if (apellidos.value.length > 0) {
+                ocultarErrorEnInput($(apellidos));
+            } else {
+                muestraErrorEnInput($(apellidos), "El campo apellido es requerido.");
+                error++;
+            }
+
+            if (celular.value.length > 0) {
+                if (celular.value.length == 10) {
+                    ocultarErrorEnInput($(celular));
+                } else {
+                    muestraErrorEnInput($(celular), "Escribe un número de teléfono válido.");
+                    error++;
+                }
+            } else {
+                muestraErrorEnInput($(celular), "El campo teléfono es requerido.");
+                error++;
+            }
+
+            if (correo.value.length > 0) {
+                if (isEmail(correo.value)) {
+                    ocultarErrorEnInput($(correo));
+                } else {
+                    muestraErrorEnInput($(correo), "Escribe un correo electrónico válido.");
+                    error++;
+                }
+            } else {
+                muestraErrorEnInput($(correo), "El campo correo electronico es requerido.");
+                error++;
+            }
+
+            if (nombrecomercial.value.length > 0) {
+                ocultarErrorEnInput($(nombrecomercial));
+            } else {
+                muestraErrorEnInput($(nombrecomercial), "El campo nombre comercial en Coppel es requerido.");
+                error++;
+            }
+
+            if (error > 0) {
+
+                return false;
+            }
+
+            return true;
 
         }
 
