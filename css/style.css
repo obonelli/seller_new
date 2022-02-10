@@ -313,7 +313,7 @@ body {
 
 
 .btn-crearcuenta {
-    position: absolute;
+   /* position: absolute;*/
     width: 312px;
     Height: 40px;
     font-family: Helvetica, sans-serif;
@@ -334,9 +334,7 @@ body {
     right: 99px;
 }
 
-.btn-right.btn-derecha {
-    right: 45px;
-}
+
 
 .btn:disabled {
     background: #E0E0E0 !important;
@@ -521,7 +519,7 @@ h2.Headline {
     text-align: left;
 }
 
-.input-invalid {
+input.input-invalid {
     padding-right: calc(1.5em + 0.75rem) !important;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E") !important;
     background-repeat: no-repeat !important;
@@ -1026,9 +1024,7 @@ p.special-help-text {
 
 }
 
-.MarginIconCard {
-    margin-left: -3px;
-}
+
 
 .MarginSmallSubtitle {
     margin-top: -15px;
@@ -1227,4 +1223,20 @@ p.special-help-text {
 
 .EspacioNeg123 {
     margin-top: -33px;
+}
+.card-bodyF {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    height: 445px;
+    width: 1151px;
+}
+
+.MarginIconCard {
+    margin-left: -5.5px;
+}
+
+.btn-right.btn-derecha {
+    right: 13px;
 }

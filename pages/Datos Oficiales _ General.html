@@ -614,17 +614,21 @@
             console.log(x);
 
             regimen = $('input[name="rad_Regimen"]:checked').val();
+
             MuestraRegimen();
             $('input[name="rad_Regimen"]').change(function () {
                 MuestraRegimen();
                 regimen = $('input[name="rad_Regimen"]:checked').val();
             });
             validaDatosOficiales();
+
         });
 
         function go_Logistic() {
             //TODO: validate fields
-            window.location = "Logistica.html?regimen=" + regimen;
+            if (validarSubmitDatosOficiales()) {
+                window.location = "Logistica.html?regimen=" + regimen;
+            }
         }
 
         function validate_Data() {

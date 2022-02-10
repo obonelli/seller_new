@@ -83,9 +83,11 @@
                 <div class="col-lg-12 mx-auto EspacioNeg">
                     <!-- Card 1 -->
                     <div class="card">
-                        <div class="card-body">
-                            <h4 class="HeaderTitleContacto"><a>Contacto</a></h4>
+                        <br>
 
+                        <div class="card-bodyF">
+                        	<h4 class="HeaderTitleContacto"><a>Contacto</a></h4>
+                        	
                             <p class="HeaderSubTitle"> Información de quién será el contacto directo con Coppel
                                 Marketplace
                             </p>
@@ -96,10 +98,11 @@
 
 
                             <div class="row">
-                                <div class="col-md-4 mb-2">
+                                <div class="col-md-4 mb-3">
                                     <div class="form-outline">
-                                        <input type="text" id="nombres" class="form-control ajus-contro"
-                                            aria-describedby="textExample1" maxlength="50" />
+                                        <input type="text" id="nombres" name="Contact[]"
+                                            class="form-control ajus-contro" aria-describedby="textExample1"
+                                            maxlength="50" />
                                         <label class="form-label" for="nombres">Nombre*</label>
                                     </div>
                                     <div id="textExample1" class="StyleGrisInputs">
@@ -107,10 +110,11 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-4 mb-2">
+                                <div class="col-md-4 mb-3">
                                     <div class="form-outline">
-                                        <input type="text" id="apellidos" class="form-control ajus-contro"
-                                            aria-describedby="textExample1" maxlength="100" />
+                                        <input type="text" id="apellidos" name="Contact[]"
+                                            class="form-control ajus-contro" aria-describedby="textExample1"
+                                            maxlength="100" />
                                         <label class="form-label" for="apellidos">Apellidos*</label>
                                     </div>
                                     <div id="textExample1" class="StyleGrisInputs">
@@ -121,10 +125,11 @@
 
 
                             <div class="row">
-                                <div class="col-md-4 mb-2">
+                                <div class="col-md-4 mb-3">
                                     <div class="form-outline">
-                                        <input type="text" id="celular" class="form-control ajus-contro onlyNumbers"
-                                            aria-describedby="textExample1" maxlength="10" />
+                                        <input type="text" id="celular" name="Contact[]"
+                                            class="form-control ajus-contro onlyNumbers" aria-describedby="textExample1"
+                                            maxlength="10" />
                                         <label class="form-label" for="celular">Teléfono celular*</label>
                                     </div>
                                     <div id="textExample1" class="StyleGrisInputs">
@@ -132,9 +137,9 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-4 mb-2">
+                                <div class="col-md-4 mb-3">
                                     <div class="form-outline">
-                                        <input type="text" id="correo" class="form-control ajus-contro"
+                                        <input type="text" id="correo" name="Contact[]" class="form-control ajus-contro"
                                             aria-describedby="textExample1" maxlength="100" />
                                         <label class="form-label" for="correo">Correo electrónico*</label>
                                     </div>
@@ -146,10 +151,10 @@
 
 
                             <div class="row">
-                                <div class="col-md-4 mb-2">
+                                <div class="col-md-4 mb-3">
                                     <div class="form-outline">
-                                        <input type="text" id="nombrecomercial" class="form-control ajus-contro"
-                                            aria-describedby="textExample1" />
+                                        <input type="text" id="nombrecomercial" name="Contact[]"
+                                            class="form-control ajus-contro" aria-describedby="textExample1" />
                                         <label class="form-label" for="nombrecomercial">Nombre comercial en
                                             Coppel*</label>
                                     </div>
@@ -165,15 +170,13 @@
 
                 </div>
             </div>
-        </div>
-
         <div class="row m-3">
             <d class="col-lg-12 text-lg">
                 <div class="row">
                     <div class="col-lg-6 text-lg-left">
 
                         <a class="nav-link SpaceBacklink" href="./MensajeBienvenida.html"> <i
-                                class="fas fa-arrow-left roblue"></i>
+                                class="fas fa-arrow-left roblue1"></i>
                             Regresa a Inicio</a>
                     </div>
 
@@ -181,13 +184,12 @@
 
                         <button id="btn_Contact" type="submit"
                             class="btn btn-crearcuenta btn-primary btn-rounded waves-effect btn-right">
-                            <!-- <a href="../pages/ExperienciaVenta.html" style="color:white;">Continuar</a> -->
                             Continuar
                         </button>
-                        <br>
+                        </div>
                     </div>
-                </div>
-            </d>
+                </d>
+            </div>
         </div>
     </form>
 
@@ -284,16 +286,21 @@
                 go_Experience();
             });
 
-            //TODO:review
-            if ($('input.ajus-contro').val().length>0) {
+            var formulario = document.getElementsByName("Contact[]");
 
-                $('input.ajus-contro').addClass("active");
+            for (var i = 0; i < formulario.length; i++) {
 
-            } else {
+                var field = formulario[i].value;
 
-                $('input.ajus-contro').removeClass("active");
+                if (field.length > 0) {
+
+                    $(formulario[i]).addClass("active");
+
+                } else {
+
+                    $(formulario[i]).removeClass("active");
+                }
             }
-
         });
 
         function go_Experience() {
@@ -318,9 +325,9 @@
             var error = 0;
 
             if (nombres.value.length > 0) {
-                ocultarErrorEnInput($('input#nombres'));
+                ocultarErrorEnInput($(nombres));
             } else {
-                muestraErrorEnInput($('input#nombres'), "El campo nombre es requerido.");
+                muestraErrorEnInput($(nombres), "El campo nombre es requerido.");
                 error++;
             }
 

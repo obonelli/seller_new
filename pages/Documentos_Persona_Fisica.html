@@ -326,7 +326,9 @@
     function go_Thanks() {
 
       //TODO: validate fields
-      window.location = "ThankYou.html";
+     if(validarSubmitDocumentos()){
+        window.location = "ThankYou.html";
+      }
 
     }
 

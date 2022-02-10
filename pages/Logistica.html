@@ -5,6 +5,11 @@
     font-family: 'CircularStd';
     src: url('../Fuente/CircularStd-Bold.ttf')format('truetype');
   }
+
+  @font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../Fuente/HelveticaNeue.ttf')format('truetype');
+  }
 </style>
 
 <head>
@@ -23,7 +28,7 @@
 
 
   <!-- Bootstrap core CSS -->
-  <!-- <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <!-- <link href="../css/mdb-pro.min.css" rel="stylesheet"> -->
   <!-- Your custom styles (optional) -->
@@ -165,7 +170,7 @@
             <br>
 
             <div class="row">
-              <div class="col-md-1 mb-1">
+              <div class="col-md-4 mb-1">
                 <div class="wrapper-select">
                   <select id="select-estado" class="form-control-select"
                     onchange="this.setAttribute('value', this.value);" value="">
@@ -185,7 +190,7 @@
               </div>
 
               <div class="col-md-4">
-                <div class="wrapper-select controlajust">
+                <div class="wrapper-select">
                   <select id="select-municipio" class="form-control-select"
                     onchange="this.setAttribute('value', this.value);" value="">
                     <option></option>
@@ -256,8 +261,8 @@
 
               <div class="col-md-4 mb-1">
                 <div class="form-outline">
-                  <input class="form-control ajus-contro" id="formControlReadonly" type="text" />
-                  <label class="form-label" for="formControlReadonly">Número interior (opcional)</label>
+                  <input class="form-control ajus-contro" id="txtNumeroInterior" type="text" />
+                  <label class="form-label" for="txtNumeroInterior">Número interior (opcional)</label>
                 </div>
               </div>
             </div>
@@ -266,9 +271,9 @@
             <div class="row">
               <div class="col-md-4 mb-1">
                 <div class="form-outline">
-                  <input type="text" id="formTextExample1" class="form-control ajus-contro"
+                  <input type="text" id="txtReferencias" class="form-control ajus-contro"
                     aria-describedby="textExample1" />
-                  <label class="form-label" for="formTextExample1">Referencias</label>
+                  <label class="form-label" for="txtReferencias">Referencias</label>
                 </div>
               </div>
               <div id="textExample1" class="StyleGrisInputs">
@@ -458,13 +463,16 @@
       regimen = url.searchParams.get("regimen");
 
       //TODO: validate fields
-      if (regimen === 'PersonaMoral') {
+      if (validarSubmitLogistica()) {
 
-        window.location = "Documentos_Persona_Moral.html";
+        if (regimen === 'PersonaMoral') {
 
-      } else if (regimen === 'PersonaFisica') {
+          window.location = "Documentos_Persona_Moral.html";
 
-        window.location = "Documentos_Persona_Fisica.html";
+        } else if (regimen === 'PersonaFisica') {
+
+          window.location = "Documentos_Persona_Fisica.html";
+        }
       }
 
     }
