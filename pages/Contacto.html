@@ -305,28 +305,121 @@
 
         function go_Experience() {
 
-            // var myHeaders = new Headers();
-            // myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
-            // myHeaders.append("Cookie", "BrowserId=UYMsRo3EEeynaVcVyipI8Q; CookieConsentPolicy=0:0; LSKey-c$CookieConsentPolicy=0:0");
+            $.ajax({
+                url: "https://test.salesforce.com/services/oauth2/token",
+                method: "POST",
+                timeout: 30000,
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                // data: {
+                //     "grant_type": "password",
+                //     "client_id": "3MVG9dzDZFnwTBRKXA8rVu5P00caW7GPdmAjcEdj8z5blPwsa4bbp4KsJ6a3qpTffeS4m.J2KSnxghcbNwcfq",
+                //     "client_secret": "2756E454EA106B0E5C799DC8505A49DE6DE9371790ECD27971292FA4C5234ACE",
+                //     "username": "integracion.mktp@coppel.com",
+                //     "password": "MktP$7!1"
+                // },
+                data: {
+                    "grant_type": "password",
+                    "client_id": "3MVG9hrgdTdWwemeusEZYYSZzjr36YXUTjAQB2FQtA8D7l.gOidbdoBYoHR.TygZzD3l5yHkV4PXtnXhogOVe",
+                    "client_secret": "019A47406C846A7066949060083E196C08B9C705F505AD57ACDDA94CAEE36883",
+                    "username": "integracion.mktp@coppel.com.qa",
+                    "password": "MktP$7!1"
+                },
+                success: function (response) {
 
-            // var urlencoded = new URLSearchParams();
-            // urlencoded.append("grant_type", "password");
-            // urlencoded.append("client_id", "3MVG9dzDZFnwTBRKXA8rVu5P00caW7GPdmAjcEdj8z5blPwsa4bbp4KsJ6a3qpTffeS4m.J2KSnxghcbNwcfq");
-            // urlencoded.append("client_secret", "2756E454EA106B0E5C799DC8505A49DE6DE9371790ECD27971292FA4C5234ACE");
-            // urlencoded.append("username", "integracion.mktp@coppel.com");
-            // urlencoded.append("password", "MktP$7!1");
+                    console.log(response.token_type + " " + response.access_token);
 
-            // var requestOptions = {
-            //     method: 'POST',
-            //     headers: myHeaders,
-            //     body: urlencoded,
-            //     redirect: 'follow'
-            // };
+                    var form_Seller = {
+                        "url": "https://coppelmx--qa.my.salesforce.com/services/apexrest/FormularioSeller/",
+                        "method": "POST",
+                        "timeout": 30000,
+                        "headers": {
+                            "Access-Control-Allow-Origin": "*",
+                            "Content-Type": "application/json",
+                            "Authorization": response.token_type + " " + response.access_token
+                        },
+                        "data": JSON.stringify({
+                            "formulario": [
+                                {
+                                    "contacto": {
+                                        "Nombre": "Miguel Angel",
+                                        "Apellidos": "Chinchilla Borjas",
+                                        "Email": "chinchillaklemanfamily@gmail.com",
+                                        "Telefono": "7788990099"
+                                    },
+                                    "operacion": {
+                                        "Regimen_Fiscal": "Regimen Fiscal",
+                                        "Url_Tienda": "www.login.salesforce.com",
+                                        "Proveedor_Coppel": true,
+                                        "Categoria_Principal": "Celulares y Tablets"
+                                    },
+                                    "datosoficiales": {
+                                        "Nombre_Completo": "Miguel Angel Chinchilla Borjas",
+                                        "Fecha_Nacimiento": "2020-12-23",
+                                        "Telefono_Celular": "7788990011",
+                                        "Correo_Electronico": "chinchillaklemanfamily@gmail.com",
+                                        "Nombre_Tienda": "La Confianza",
+                                        "Razon_Social": "Venta Celulares y Tablets",
+                                        "RFC_Empresa": "17588964DE",
+                                        "Direccion_Fiscal": "Calle la alegria",
+                                        "Codigo_Postal": "01049",
+                                        "Colonia": "La amistad",
+                                        "Estado": "Jalisco",
+                                        "Ciudad": "Guadalajara",
+                                        "Telefono_Fijo": "8900889999",
+                                        "Nombre_Titular": "7788994422",
+                                        "Numero_Cuenta": 123456,
+                                        "Clave_Interbancaria": 77889900,
+                                        "Nombre_Banco": "Banco Credomatic"
+                                    },
+                                    "logistica": {
+                                        "Nombre": "Ana Isabel",
+                                        "Apellidos": "Reyes Baca",
+                                        "Telefono": "8899889900",
+                                        "Telefono2": "3344558899",
+                                        "Email": "ana.reyes.baca@gmail.com",
+                                        "Calle": "El comercio",
+                                        "Numero_Exterior": 123,
+                                        "Numero_Interior": 456,
+                                        "Codigo_Postal": "01048",
+                                        "Colonia": "La amistad",
+                                        "Estado": "Jalisco",
+                                        "Ciudad": "Guadalajara"
+                                    },
+                                    "prospecto": {
+                                        "Categoria_Principal": "Valor 1",
+                                        "Clasificacion_Principal": "Negociación",
+                                        "Nombre_Empresa": "LA CONFIANZA",
+                                        "Proveedor_Coppel": true,
+                                        "Referido_Por": "Paul Kleman",
+                                        "GMV": "GMV"
+                                    }
+                                }
+                            ]
+                        }),
+                    };
 
-            // fetch("https://test.salesforce.com/services/oauth2/token", requestOptions)
-            //     .then(response => response.text())
-            //     .then(result => console.log(result))
-            //     .catch(error => console.log('error', error));
+                    $.ajax(form_Seller).done(function (response_form) {
+
+                        var resp = JSON.parse(response_form);
+                        console.log(resp);
+                        console.log(resp.rfc);
+
+                    }).fail(function () {
+
+                        console.log("Error: send form");
+                        return false;
+                    });
+
+                    return true;
+                },
+                error: function (xhr, status, error) {
+
+                    console.log("Error: try get token");
+                    return false;
+                }
+            });
 
             //TODO: validate fields
             if (validate_Contact()) {

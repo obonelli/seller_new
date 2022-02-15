@@ -87,11 +87,18 @@ function form_Create_Seller() {
         headers: {
             "Content-Type": "application/x-www-form-urlencoded"
         },
+        // data: {
+        //     "grant_type": "password",
+        //     "client_id": "3MVG9dzDZFnwTBRKXA8rVu5P00caW7GPdmAjcEdj8z5blPwsa4bbp4KsJ6a3qpTffeS4m.J2KSnxghcbNwcfq",
+        //     "client_secret": "2756E454EA106B0E5C799DC8505A49DE6DE9371790ECD27971292FA4C5234ACE",
+        //     "username": "integracion.mktp@coppel.com",
+        //     "password": "MktP$7!1"
+        // },
         data: {
             "grant_type": "password",
-            "client_id": "3MVG9dzDZFnwTBRKXA8rVu5P00caW7GPdmAjcEdj8z5blPwsa4bbp4KsJ6a3qpTffeS4m.J2KSnxghcbNwcfq",
-            "client_secret": "2756E454EA106B0E5C799DC8505A49DE6DE9371790ECD27971292FA4C5234ACE",
-            "username": "integracion.mktp@coppel.com",
+            "client_id": "3MVG9hrgdTdWwemeusEZYYSZzjr36YXUTjAQB2FQtA8D7l.gOidbdoBYoHR.TygZzD3l5yHkV4PXtnXhogOVe",
+            "client_secret": "019A47406C846A7066949060083E196C08B9C705F505AD57ACDDA94CAEE36883",
+            "username": "integracion.mktp@coppel.com.qa",
             "password": "MktP$7!1"
         },
         success: function (response) {
