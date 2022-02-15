@@ -33,23 +33,51 @@ function isRfcValid(rfc) {
     console.log(regex.test(rfc));
     return regex.test(rfc);
 }
+
 function MuestraRegimen() {
+    var requeridosFisica = [
+        {id:'input#txtNombreContribuyente',label:'El campo nombre del contribuyente es requerido.'},
+        {id:'input#txtRFCContribuyente',label:'El campo RFC es requerido.'},
+        {id:'input#txtCP',label:'El campo código postal es requerido.'},
+        {id:'select#select-estado',label:'Selecciona una opción.'},
+        {id:'select#select-municipio',label:'Selecciona una opción.'} ,
+        {id:'select#select-colonia',label:'Selecciona una opción.'},
+        {id:'input#txtContribuyenteCalle',label:'El campo calle es requerido.'}, 
+        {id:'input#txtContribuyenteTelefono',label:'El campo teléfono es requerido.'}
+    ];
+    var requeridosMoral = [
+            {id:'input#txtMoralRazonSocial',label:'El campo razón social es requerido.'},
+            {id:'input#txtMoralRFC',label:'El campo RFC es requerido.'},
+            {id:'input#txtMoralCP',label:'El campo código postal es requerido.'},
+            {id:'select#select-moral-estado',label:'Selecciona una opción.'},
+            {id:'select#select-moral-municipio',label:'Selecciona una opción.'} ,
+            {id:'select#select-moral-colonia',label:'Selecciona una opción.'},
+            {id:'input#txtMoralCalle',label:'El campo calle es requerido.'}, 
+            {id:'input#txtMoralTelefono',label:'El campo teléfono es requerido.'}
+    ]; 
+    var elements=[];
     $('#RegimenFiscalPersonaMoral,#RegimenFiscalPersonaFisica').find("input,select").each(function () {
-        if ($(this).prop('nodeName') === 'INPUT') {
+        if ($(this).prop('nodeName')==='INPUT') {
             $(this).val('');
-        } else if ($(this).prop('nodeName') === 'SELECT') {
+        } else if ($(this).prop('nodeName')==='SELECT') {
             $(this).html('<option></option>');
-        }
+        } 
     });
     $('#RegimenFiscalPersonaMoral,#RegimenFiscalPersonaFisica').hide();
     var RegimenFiscal = $('input[name="rad_Regimen"]:checked').val();
     if (RegimenFiscal === 'PersonaFisica') {
         $('#RegimenFiscalPersonaMoral,#RegimenFiscalPersonaFisica').hide();
         $('#RegimenFiscalPersonaMoral').fadeIn(1000);
+        elements=requeridosFisica;
     } else if (RegimenFiscal === 'PersonaMoral') {
         $('#RegimenFiscalPersonaMoral,#RegimenFiscalPersonaFisica').hide();
         $('#RegimenFiscalPersonaFisica').fadeIn(1000);
+        elements=requeridosMoral;
     }
+    $.each(elements, function( index, element ) {
+        var item=$(element.id); 
+        ocultarErrorEnInput(item);
+    });
 }
 function validarLogistica() {
     $("input.onlyNumbers").keypress(function (e) {
@@ -569,8 +597,9 @@ function validarSubmitLogistica() {
     return !(validarConjunto(requeridos) > 0);
 }
 function validarSubmitDocumentos() {
+    var counter = 0;
+
     $("input.inputFile").each(function () {
-        var counter = 0;
         var id = $(this).attr("id");
         var maximoEnBytes = 2048; //test 600 }}} prod 2048
         var filename = '';

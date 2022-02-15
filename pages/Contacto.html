@@ -86,8 +86,8 @@
                         <br>
 
                         <div class="card-bodyF">
-                        	<h4 class="HeaderTitleContacto"><a>Contacto</a></h4>
-                        	
+                            <h4 class="HeaderTitleContacto"><a>Contacto</a></h4>
+
                             <p class="HeaderSubTitle"> Información de quién será el contacto directo con Coppel
                                 Marketplace
                             </p>
@@ -170,22 +170,22 @@
 
                 </div>
             </div>
-        <div class="row m-3">
-            <d class="col-lg-12 text-lg">
-                <div class="row">
-                    <div class="col-lg-6 text-lg-left">
+            <div class="row m-3">
+                <d class="col-lg-12 text-lg">
+                    <div class="row">
+                        <div class="col-lg-6 text-lg-left">
 
-                        <a class="nav-link SpaceBacklink" href="./MensajeBienvenida.html"> <i
-                                class="fas fa-arrow-left roblue1"></i>
-                            Regresa a Inicio</a>
-                    </div>
+                            <a class="nav-link SpaceBacklink" href="./MensajeBienvenida.html"> <i
+                                    class="fas fa-arrow-left roblue1"></i>
+                                Regresa a Inicio</a>
+                        </div>
 
-                    <div class="col-lg-6 text-lg-right">
+                        <div class="col-lg-6 text-lg-right">
 
-                        <button id="btn_Contact" type="submit"
-                            class="btn btn-crearcuenta btn-primary btn-rounded waves-effect btn-right">
-                            Continuar
-                        </button>
+                            <button id="btn_Contact" type="submit"
+                                class="btn btn-crearcuenta btn-primary btn-rounded waves-effect btn-right">
+                                Continuar
+                            </button>
                         </div>
                     </div>
                 </d>
@@ -305,6 +305,29 @@
 
         function go_Experience() {
 
+            // var myHeaders = new Headers();
+            // myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+            // myHeaders.append("Cookie", "BrowserId=UYMsRo3EEeynaVcVyipI8Q; CookieConsentPolicy=0:0; LSKey-c$CookieConsentPolicy=0:0");
+
+            // var urlencoded = new URLSearchParams();
+            // urlencoded.append("grant_type", "password");
+            // urlencoded.append("client_id", "3MVG9dzDZFnwTBRKXA8rVu5P00caW7GPdmAjcEdj8z5blPwsa4bbp4KsJ6a3qpTffeS4m.J2KSnxghcbNwcfq");
+            // urlencoded.append("client_secret", "2756E454EA106B0E5C799DC8505A49DE6DE9371790ECD27971292FA4C5234ACE");
+            // urlencoded.append("username", "integracion.mktp@coppel.com");
+            // urlencoded.append("password", "MktP$7!1");
+
+            // var requestOptions = {
+            //     method: 'POST',
+            //     headers: myHeaders,
+            //     body: urlencoded,
+            //     redirect: 'follow'
+            // };
+
+            // fetch("https://test.salesforce.com/services/oauth2/token", requestOptions)
+            //     .then(response => response.text())
+            //     .then(result => console.log(result))
+            //     .catch(error => console.log('error', error));
+
             //TODO: validate fields
             if (validate_Contact()) {
 
@@ -395,45 +418,59 @@
         }
 
         function checkCookie() {
-            let nombres = getCookie("nombres");
-            let apellidos = getCookie("apellidos");
-            let celular = getCookie("celular");
-            let correo = getCookie("correo");
-            let nombrecomercial = getCookie("nombrecomercial");
+
+            // contacto: Nombre
+            let nombres = getCookie("contacto.Nombre");
+            // contacto: Apellidos
+            let apellidos = getCookie("contacto.Apellidos");
+            // contacto: Telefono
+            let celular = getCookie("contacto.Telefono");
+            // contacto: Email
+            let correo = getCookie("contacto.Email");
+            // datosoficiales: Nombre_Tienda
+            let nombre_Comercial = getCookie("datosoficiales.NombreTienda");
 
             if (nombres != "") {
-                //alert("Sus nombres son " + nombres);
+
                 document.getElementById('nombres').value = nombres;
             }
             if (apellidos != "") {
-                //alert("Sus apellidos son " + nombres);
+
                 document.getElementById('apellidos').value = apellidos;
             }
             if (celular != "") {
-                //alert("Sus nombres son " + nombres);
+
                 document.getElementById('celular').value = celular;
             }
             if (correo != "") {
-                //alert("Sus nombres son " + nombres);
+
                 document.getElementById('correo').value = correo;
             }
             if (nombrecomercial != "") {
-                //alert("Sus nombres son " + nombres);
-                document.getElementById('nombrecomercial').value = nombrecomercial;
+
+                document.getElementById('nombrecomercial').value = nombre_Comercial;
             }
         }
 
         function setCookie() {
+
+            // contacto: Nombre
             var nombres = document.getElementById('nombres').value;
+            // contacto: Apellidos
             var apellidos = document.getElementById('apellidos').value;
+            // contacto: Telefono
             var celular = document.getElementById('celular').value;
+            // contacto: Email
             var correo = document.getElementById('correo').value;
-            var nombrecomercial = document.getElementById('nombrecomercial').value;
-            document.cookie = "nombres" + "=" + nombres + ";";
-            document.cookie = "apellidos" + "=" + apellidos + ";";
-            document.cookie = "celular" + "=" + celular + ";";
-            document.cookie = "correo" + "=" + correo + ";";
-            document.cookie = "nombrecomercial" + "=" + nombrecomercial + ";";
+            // datosoficiales: Nombre_Tienda
+            var nombre_Comercial = document.getElementById('nombrecomercial').value;
+            // set var in cookies
+            document.cookie = "contacto.Nombre" + "=" + nombres + ";";
+            document.cookie = "contacto.Apellidos" + "=" + apellidos + ";";
+            document.cookie = "contacto.Telefono" + "=" + celular + ";";
+            document.cookie = "contacto.Email" + "=" + correo + ";";
+            document.cookie = "datosoficiales.NombreTienda" + "=" + nombre_Comercial + ";";
+
         }
 
     </script>

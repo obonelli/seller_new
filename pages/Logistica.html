@@ -129,9 +129,9 @@
 
               <div class="col-md-4 mb-1">
                 <div class="form-outline">
-                  <input class="form-control ajus-contro onlyNumbers" id="formControlReadonly" type="text"
-                    maxlength="50" />
-                  <label class="form-label" for="formControlReadonly">Teléfono secundario (opcional)</label>
+                  <input class="form-control ajus-contro onlyNumbers" id="txtTelefonoSecundario" type="text"
+                    maxlength="13" />
+                  <label class="form-label" for="txtTelefonoSecundario">Teléfono secundario (opcional)</label>
                 </div>
               </div>
             </div>
@@ -251,7 +251,7 @@
             <div class="row">
               <div class="col-md-4 mb-1">
                 <div class="form-outline">
-                  <input class="form-control ajus-contro" id="txtNumeroExterior" type="text" />
+                  <input class="form-control ajus-contro onlyNumbers" id="txtNumeroExterior" type="text" />
                   <label class="form-label" for="txtNumeroExterior">Número exterior*</label>
                 </div>
                 <div class="form-text ml  hidden help-text hasError ">
@@ -261,7 +261,7 @@
 
               <div class="col-md-4 mb-1">
                 <div class="form-outline">
-                  <input class="form-control ajus-contro" id="txtNumeroInterior" type="text" />
+                  <input class="form-control ajus-contro onlyNumbers" id="txtNumeroInterior" type="text" />
                   <label class="form-label" for="txtNumeroInterior">Número interior (opcional)</label>
                 </div>
               </div>
@@ -453,6 +453,9 @@
 
     $(document).ready(function () {
 
+      let x = document.cookie;
+      console.log(x);
+
       validarLogistica();
 
     });
@@ -467,10 +470,12 @@
 
         if (regimen === 'PersonaMoral') {
 
+          setCookie();
           window.location = "Documentos_Persona_Moral.html";
 
         } else if (regimen === 'PersonaFisica') {
 
+          setCookie();
           window.location = "Documentos_Persona_Fisica.html";
         }
       }
@@ -478,6 +483,61 @@
     }
 
     function validate_Logistica() {
+
+    }
+
+    function setCookie() {
+
+      // logistica: Nombre
+      var nombre = document.getElementById('txtNombre').value;
+      // logistica: Apellidos
+      var apellidos = document.getElementById('txtApellido').value;
+      // logistica: Telefono
+      var telefono_Principal = document.getElementById('txtTelefonoPrincipal').value;
+      // logistica: Telefono2
+      var telefono_Secundario = document.getElementById('txtTelefonoSecundario').value;
+      // logistica: Email
+      var email = document.getElementById('txtCorreoElectronico').value;
+      // logistica: Calle
+      var calle = document.getElementById('txtCalle').value;
+      // logistica: Numero_Exterior
+      var numero_Exterior = document.getElementById('txtNumeroExterior').value;
+      // logistica: Numero_Interior
+      var numero_Interior = document.getElementById('txtNumeroInterior').value;
+      // logistica: Codigo_Postal
+      var codigo_Postal = document.getElementById('txtCodigoPostal').value;
+      // TODO: falta campo de Referencias.
+      // logistica: Colonia
+      var select_Colonia = document.getElementById("select-colonia");
+      var colonia = select_Colonia.options[select_Colonia.selectedIndex].text;
+      // logistica: Estado
+      var select_Estado = document.getElementById('select-estado');
+      var estado = select_Estado.options[select_Estado.selectedIndex].text;
+      // logistica: Ciudad
+      var select_Municipio = document.getElementById('select-municipio');
+      var municipio = select_Municipio.options[select_Municipio.selectedIndex].text;
+      // prospecto: Referido por
+      var referido_Por = document.getElementById('txtNombreGrantias').value;
+      // set var in cookies
+      document.cookie = "logistica.Nombre" + "=" + nombre + ";";
+      document.cookie = "logistica.Apellidos" + "=" + apellidos + ";";
+      document.cookie = "logistica.Telefono" + "=" + telefono_Principal + ";";
+      document.cookie = "logistica.Telefono2" + "=" + telefono_Secundario + ";";
+      document.cookie = "logistica.Email" + "=" + email + ";";
+      document.cookie = "logistica.Calle" + "=" + calle + ";";
+      document.cookie = "logistica.NumeroExterior" + "=" + numero_Exterior + ";";
+      if (numero_Interior != "" && numero_Interior != 'null') {
+
+        document.cookie = "logistica.NumeroInterior" + "=" + numero_Interior + ";";
+      } else {
+
+        document.cookie = "logistica.NumeroInterior" + "=" + "" + ";";
+      }
+      document.cookie = "logistica.CodigoPostal" + "=" + codigo_Postal + ";";
+      document.cookie = "logistica.Colonia" + "=" + colonia + ";";
+      document.cookie = "logistica.Estado" + "=" + estado + ";";
+      document.cookie = "logistica.Ciudad" + "=" + municipio + ";";
+      document.cookie = "prospecto.ReferidoPor" + "=" + referido_Por + ";";
 
     }
 

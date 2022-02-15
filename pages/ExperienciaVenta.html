@@ -362,13 +362,7 @@
     </footer>
     <!-- Footer -->
 
-
-
-
-
     <!-- JQuery -->
-
-
     <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
     <!-- Bootstrap tooltips -->
     <!-- <script type="text/javascript" src="../js/popper.min.js"></script> -->
@@ -383,13 +377,14 @@
 
             let x = document.cookie;
             console.log(x);
+            // validarLogistica();
 
         });
 
         function go_Data() {
 
             //TODO: validate fields
-            setCookie()
+            setCookie();
             window.location = "Datos Oficiales _ General.html";
         }
 
@@ -435,22 +430,8 @@
             }
         }
 
-        function rad_Experience(radio) {
-
-            var select = document.getElementById("select_Experience");
-
-            if (radio.value == "true") {
-
-                select.disabled = false;
-
-            } else {
-
-                select.disabled = true;
-                select.value = "";
-            }
-        }
-
         function setCookie() {
+
             var check_Mercado = document.getElementById('check_Mercado').checked;
             var lab_Mercado = document.getElementById('lab_Mercado').value;
 
@@ -468,38 +449,55 @@
 
             var check_Otra = document.getElementById('check_Otra').checked;
             var lab_Otra = document.getElementById('lab_Otra').value;
-            // CheckBox Mercancia coppel
 
-            var rad_Experience1 = document.getElementById('rad_Experience1').checked;
-            var rad_Experience2 = document.getElementById('rad_Experience2').checked;
-            // Selecciona categoria
 
-            var select_Experience = document.getElementById('select_Experience').value;
+            // TODO: add more stores?
+            // operacion: Url_Tienda
+            document.cookie = "operacion.UrlTienda" + "=" + "" + ";";
+            if (check_Mercado) {
 
-            document.cookie = "check_Mercado" + "=" + check_Mercado + ";";
-            document.cookie = "lab_Mercado" + "=" + lab_Mercado + ";";
+                document.cookie = "operacion.UrlTienda" + "=" + lab_Mercado + ";";
+            }
+            if (check_Linio) {
 
-            document.cookie = "check_Linio" + "=" + check_Linio + ";";
-            document.cookie = "lab_Linio" + "=" + lab_Linio + ";";
+                document.cookie = "operacion.UrlTienda" + "=" + lab_Linio + ";";
+            }
+            if (check_Walmart) {
 
-            document.cookie = "check_Walmart" + "=" + check_Walmart + ";";
-            document.cookie = "lab_Walmart" + "=" + lab_Walmart + ";";
+                document.cookie = "operacion.UrlTienda" + "=" + lab_Walmart + ";";
+            }
+            if (check_Liverpool) {
 
-            document.cookie = "check_Liverpool" + "=" + check_Liverpool + ";";
-            document.cookie = "lab_Liverpool" + "=" + lab_Liverpool + ";";
+                document.cookie = "operacion.UrlTienda" + "=" + lab_Liverpool + ";";
+            }
+            if (check_Elektra) {
 
-            document.cookie = "check_Elektra" + "=" + check_Elektra + ";";
-            document.cookie = "lab_Elektra" + "=" + lab_Elektra + ";";
+                document.cookie = "operacion.UrlTienda" + "=" + lab_Elektra + ";";
+            }
+            if (check_Otra) {
 
-            document.cookie = "check_Otra" + "=" + check_Otra + ";";
-            document.cookie = "lab_Otra" + "=" + lab_Otra + ";";
-            // CheckBox Mercancia coppel
+                document.cookie = "operacion.UrlTienda" + "=" + lab_Otra + ";";
+            }
+            // operacion: Proveedor_Coppel
+            var rad_Experience = document.getElementsByName('rad_Experience');
+            document.cookie = "operacion.ProveedorCoppel" + "=" + false + ";";
+            for (var i = 0, l = rad_Experience.length; i < l; i++) {
 
-            document.cookie = "rad_Experience1" + "=" + rad_Experience1 + ";";
-            document.cookie = "rad_Experience2" + "=" + rad_Experience2 + ";";
-            // Selecciona categoria
+                if (rad_Experience[i].checked) {
 
-            document.cookie = "select_Experience" + "=" + select_Experience + ";";
+                    document.cookie = "operacion.ProveedorCoppel" + "=" + rad_Experience[i].value + ";";
+                }
+            }
+            // operacion: Categoria_Principal
+            var select_Experience = document.getElementById('select_Experience');
+            var categoria_Principal = "";
+            if (select_Experience.value != "") {
+
+                categoria_Principal = select_Experience.options[select_Experience.selectedIndex].text;
+            }
+
+            document.cookie = "operacion.CategoriaPrincipal" + "=" + categoria_Principal + ";";
+
         }
 
     </script>

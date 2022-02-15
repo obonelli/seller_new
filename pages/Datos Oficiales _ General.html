@@ -432,8 +432,9 @@
                             <div class="row">
                                 <div class="col-md-4 mb-2">
                                     <div class="form-outline">
-                                        <input type="text" id="txtContribuyenteTelefono" class="form-control ajus-contro onlyNumbers"
-                                            aria-describedby="textExample1" maxlength="10"/>
+                                        <input type="text" id="txtContribuyenteTelefono"
+                                            class="form-control ajus-contro onlyNumbers" aria-describedby="textExample1"
+                                            maxlength="10" />
                                         <label class="form-label" for="txtContribuyenteTelefono">Teléfono local*</label>
                                     </div>
                                     <div id="textExample1" class="StyleGrisInputs">
@@ -456,7 +457,7 @@
                                 <div class="form-outline">
                                     <input type="text" id="txtNombreCompleto" class="form-control ajus-contro"
                                         aria-describedby="textExample1" />
-                                    <label class="form-label" for="formTextExample1">Nombre completo del
+                                    <label class="form-label" for="txtNombreCompleto">Nombre completo del
                                         titular*</label>
                                 </div>
                                 <div id="textExample1" class="StyleGrisInputs">
@@ -473,7 +474,7 @@
                                 <div class="form-outline">
                                     <input type="text" id="txtBanco" class="form-control ajus-contro"
                                         aria-describedby="textExample1" />
-                                    <label class="form-label" for="formTextExample1">Nombre del banco*</label>
+                                    <label class="form-label" for="txtBanco">Nombre del banco*</label>
                                 </div>
                                 <div class="form-text hidden ml  help-text hasError ">
                                     <small> validation message </small>
@@ -487,7 +488,7 @@
                                 <div class="form-outline">
                                     <input type="text" id="txtCuenta" class="form-control ajus-contro onlyNumbers"
                                         aria-describedby="textExample1" maxlength="18" />
-                                    <label class="form-label" for="formTextExample1">Número de cuenta*</label>
+                                    <label class="form-label" for="txtCuenta">Número de cuenta*</label>
                                 </div>
                                 <div class="form-text hidden ml  help-text hasError ">
                                     <small> validation message </small>
@@ -501,7 +502,7 @@
                                 <div class="form-outline">
                                     <input type="text" id="txtClabe" class="form-control ajus-contro onlyNumbers"
                                         aria-describedby="textExample1" maxlength="18" />
-                                    <label class="form-label" for="formTextExample1">CLABE interbancaria*</label>
+                                    <label class="form-label" for="txtClabe">CLABE interbancaria*</label>
                                 </div>
                                 <div id="textExample1" class="StyleGrisInputs">
                                     <small>Escribe los 18 dígitos
@@ -627,6 +628,7 @@
         function go_Logistic() {
             //TODO: validate fields
             if (validarSubmitDatosOficiales()) {
+                setCookie();
                 window.location = "Logistica.html?regimen=" + regimen;
             }
         }
@@ -636,55 +638,112 @@
         }
 
         function setCookie() {
-            var check_Mercado = document.getElementById('check_Mercado');
-            var lab_Mercado = document.getElementById('lab_Mercado');
 
-            var check_Linio = document.getElementById('check_Linio');
-            var lab_Linio = document.getElementById('lab_Linio');
+            // datosoficiales: Nombre_Completo
+            var nombre_Completo = document.getElementById('txtNombre').value;
+            // TODO: No piden CURP
+            // datosoficiales: Fecha_Nacimiento
+            var fecha_Nacimiento = document.getElementById('txtFechaNacimiento').value;
+            // datosoficiales: Telefono_Celular
+            var telefono_Celular = document.getElementById('txtTelefono').value;
+            // datosoficiales: Correo_Electronico
+            var correo = document.getElementById('txtCorreoElectronico').value;
+            // select Regimen: PersonaMoral || PersonaFisica
+            var rad_Regimen = document.getElementsByName('rad_Regimen');
+            var regimen = "";
+            var razon_Social = "";
+            var rfc_Empresa = "";
+            var direccion_Fiscal = "";
+            var codigo_Postal = "";
+            var select_Colonia;
+            var colonia = "";
+            var select_Estado;
+            var estado = "";
+            var select_Municipio;
+            var municipio = "";
+            var telefono_Fijo = "";
 
-            var check_Walmart = document.getElementById('correo');
-            var lab_Walmart = document.getElementById('lab_Walmart');
+            for (var i = 0, l = rad_Regimen.length; i < l; i++) {
 
-            var check_Liverpool = document.getElementById('check_Liverpool');
-            var lab_Liverpool = document.getElementById('lab_Liverpool');
+                if (rad_Regimen[i].checked) {
 
-            var check_Elektra = document.getElementById('check_Elektra');
-            var lab_Elektra = document.getElementById('lab_Elektra');
+                    regimen = rad_Regimen[i].value;
+                }
+            }
+            // PersonaMoral || PersonaFisica
+            if (regimen == "PersonaMoral") {
 
-            var check_Otra = document.getElementById('check_Otra');
-            var lab_Otra = document.getElementById('lab_Otra');
-            // CheckBox Mercancia coppel
+                // datosoficiales: Razon_Social
+                razon_Social = document.getElementById('txtMoralRazonSocial').value;
+                // datosoficiales: RFC_Empresa
+                rfc_Empresa = document.getElementById('txtMoralRFC').value;
+                // datosoficiales: Direccion_Fiscal
+                direccion_Fiscal = document.getElementById('txtMoralCalle').value;
+                // datosoficiales: Codigo_Postal
+                codigo_Postal = document.getElementById('txtMoralCP').value;
+                // datosoficiales: Colonia
+                select_Colonia = document.getElementById("select-moral-colonia");
+                colonia = select_Colonia.options[select_Colonia.selectedIndex].text;
+                // datosoficiales: Estado
+                select_Estado = document.getElementById('select-moral-estado');
+                estado = select_Estado.options[select_Estado.selectedIndex].text;
+                // datosoficiales: Ciudad
+                select_Municipio = document.getElementById('select-moral-municipio');
+                municipio = select_Municipio.options[select_Municipio.selectedIndex].text;
+                // datosoficiales: Telefono_Fijo
+                telefono_Fijo = document.getElementById('txtMoralTelefono').value;
 
-            var rad_Experience1 = document.getElementById('rad_Experience1');
-            var rad_Experience2 = document.getElementById('rad_Experience2');
-            // Selecciona categoria
+            } else {
 
-            var select_Experience = document.getElementById('select_Experience');
+                // TODO: qué valor se le da para razon_Social?
+                // datosoficiales: Razon_Social
+                razon_Social = document.getElementById('txtNombreContribuyente').value;
+                // datosoficiales: RFC_Empresa
+                rfc_Empresa = document.getElementById('txtRFCContribuyente').value;
+                // datosoficiales: Direccion_Fiscal
+                direccion_Fiscal = document.getElementById('txtContribuyenteCalle').value;
+                // datosoficiales: Codigo_Postal
+                codigo_Postal = document.getElementById('txtCP').value;
+                // datosoficiales: Colonia
+                select_Colonia = document.getElementById("select-colonia");
+                colonia = select_Colonia.options[select_Colonia.selectedIndex].text;
+                // datosoficiales: Estado
+                select_Estado = document.getElementById('select-estado');
+                estado = select_Estado.options[select_Estado.selectedIndex].text;
+                // datosoficiales: Ciudad
+                select_Municipio = document.getElementById('select-municipio');
+                municipio = select_Municipio.options[select_Municipio.selectedIndex].text;
+                // datosoficiales: Telefono_Fijo
+                telefono_Fijo = document.getElementById('txtContribuyenteTelefono').value;
 
-            document.cookie = "check_Mercado" + "=" + check_Mercado + ";";
-            document.cookie = "lab_Mercado" + "=" + lab_Mercado + ";";
+            }
+            // datosoficiales: Nombre_Titular
+            var nombre_Titular = document.getElementById('txtNombreCompleto').value;
+            // datosoficiales: Numero_Cuenta
+            var numero_Cuenta = document.getElementById('txtCuenta').value;
+            // datosoficiales: Clave_Interbancaria
+            var clabe = document.getElementById('txtClabe').value;
+            // datosoficiales: Nombre_Banco
+            var nombre_Banco = document.getElementById('txtBanco').value;
+            // set var in cookies
+            document.cookie = "operacion.RegimenFiscal" + "=" + regimen + ";";
+            document.cookie = "datosoficiales.NombreCompleto" + "=" + nombre_Completo + ";";
+            document.cookie = "datosoficiales.FechaNacimiento" + "=" + fecha_Nacimiento + ";";
+            document.cookie = "datosoficiales.TelefonoCelular" + "=" + telefono_Celular + ";";
+            document.cookie = "datosoficiales.CorreoElectronico" + "=" + correo + ";";
+            document.cookie = "datosoficiales.RazonSocial" + "=" + razon_Social + ";";
+            document.cookie = "datosoficiales.RFCEmpresa" + "=" + rfc_Empresa + ";";
+            document.cookie = "datosoficiales.DireccionFiscal" + "=" + direccion_Fiscal + ";";
+            document.cookie = "datosoficiales.CodigoPostal" + "=" + codigo_Postal + ";";
+            document.cookie = "datosoficiales.Colonia" + "=" + colonia + ";";
+            document.cookie = "datosoficiales.Estado" + "=" + estado + ";";
+            document.cookie = "datosoficiales.Ciudad" + "=" + municipio + ";";
+            document.cookie = "datosoficiales.TelefonoFijo" + "=" + telefono_Fijo + ";";
+            document.cookie = "datosoficiales.NombreTitular" + "=" + nombre_Titular + ";";
+            document.cookie = "datosoficiales.NumeroCuenta" + "=" + numero_Cuenta + ";";
+            document.cookie = "datosoficiales.ClaveInterbancaria" + "=" + clabe + ";";
+            document.cookie = "datosoficiales.NombreBanco" + "=" + nombre_Banco + ";";
 
-            document.cookie = "check_Linio" + "=" + check_Linio + ";";
-            document.cookie = "lab_Linio" + "=" + lab_Linio + ";";
-
-            document.cookie = "check_Walmart" + "=" + check_Walmart + ";";
-            document.cookie = "lab_Walmart" + "=" + lab_Walmart + ";";
-
-            document.cookie = "check_Liverpool" + "=" + check_Liverpool + ";";
-            document.cookie = "lab_Liverpool" + "=" + lab_Liverpool + ";";
-
-            document.cookie = "check_Elektra" + "=" + check_Elektra + ";";
-            document.cookie = "lab_Elektra" + "=" + lab_Elektra + ";";
-
-            document.cookie = "check_Otra" + "=" + check_Otra + ";";
-            document.cookie = "lab_Otra" + "=" + lab_Otra + ";";
-            // CheckBox Mercancia coppel
-
-            document.cookie = "rad_Experience1" + "=" + rad_Experience1 + ";";
-            document.cookie = "rad_Experience2" + "=" + rad_Experience2 + ";";
-            // Selecciona categoria
-
-            document.cookie = "select_Experience" + "=" + select_Experience + ";";
         }
 
     </script>

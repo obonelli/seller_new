@@ -312,23 +312,7 @@ body {
 }
 
 
-.btn-crearcuenta {
-   /* position: absolute;*/
-    width: 312px;
-    Height: 40px;
-    font-family: Helvetica, sans-serif;
-    font-size: 16px;
-    border-radius: 24px;
-    text-transform: initial;
-    background-color: #006fb9 !important;
-    /* CambiosEncontrados */
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: 0.5px;
-}
+
 
 .btn-right {
     right: 99px;
@@ -726,20 +710,7 @@ p.special-help-text {
 
 }
 
-.Button.Medium {
-    /* //styleName: Web/Button/Button Medium; */
-    font-family: Helvetica, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    text-align: center;
-    text-transform: none !important;
-    width: 200px;
-    height: 40px;
 
-}
 
 .Button.Medium:hover {
     background-color: #006fb9 !important;
@@ -1009,13 +980,7 @@ p.special-help-text {
     margin-left: 280px;
 }
 
-.LetraBotton {
-    font-family: 'Helvetica', sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    color: #FFFFFF;
-}
+
 
 .CardSmall {
     box-shadow: 0 2px 4px 0 rgba(18, 18, 18, 0.08);
@@ -1062,9 +1027,7 @@ p.special-help-text {
     margin-top: -15px;
 }
 
-.IconSmallEs {
-    margin-top: -3px;
-}
+
 
 .BtnSpacio {
     margin-left: -120px;
@@ -1101,19 +1064,7 @@ p.special-help-text {
 
 
 
-.BotonThakyU {
-    width: 312px;
-    height: 48px;
-    font-family: Helvetica, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    text-align: center;
-    text-transform: none !important;
-    margin-top: -6px;
-}
+
 
 .margininputs {
 
@@ -1224,6 +1175,7 @@ p.special-help-text {
 .EspacioNeg123 {
     margin-top: -33px;
 }
+
 .card-bodyF {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -1239,4 +1191,74 @@ p.special-help-text {
 
 .btn-right.btn-derecha {
     right: 13px;
+}
+
+.btn-crearcuenta {
+    position: absolute;
+    width: 312px;
+    Height: 40px;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    border-radius: 24px;
+    text-transform: initial;
+    background-color: #006fb9 !important;
+    /* CambiosEncontrados */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    left: 206px;
+}
+
+.MLeft {
+    left: 576px;
+}
+
+.Button.Medium {
+    /* //styleName: Web/Button/Button Medium; */
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: none !important;
+    width: 200px;
+    height: 40px;
+    border-radius: 24px;
+
+}
+
+
+.LetraBotton {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    margin-top: 4px;
+    margin-left: -12px;
+}
+
+.IconSmallEs {
+    margin-top: 1px;
+    margin-left: 13px;
+}
+
+.BotonThakyU {
+    width: 312px;
+    height: 48px;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: none !important;
+    margin-top: -6px;
+    border-radius: 24px;
 }

@@ -341,7 +341,7 @@
 
 
     <div class="row">
-        <div class="col-lg-12 text-lg-right">
+        <div class="col-lg-12 text-lg-right MLeft">
             <button id="btn_Start" type="button" onclick="start_Form()"
                 class="btn btn-crearcuenta btn-primary btn-rounded btn-right waves-effect btn-derecha" disabled>
                 Iniciar solicitud
@@ -460,8 +460,10 @@
         }
 
         function setCookie() {
+
             let accept = "aceptoSolicitud";
-            let acceptvalue = "Si";
+            let acceptvalue = "true";
+
             document.cookie = accept + "=" + acceptvalue + ";";
         }
 
